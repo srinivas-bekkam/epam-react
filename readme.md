@@ -1,4 +1,4 @@
-## WebPack
+# WebPack
 
 Webpack is a bundler for modules. The main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 
@@ -12,9 +12,9 @@ Webpack is a bundler for modules. The main purpose is to bundle JavaScript files
 
 - Highly modular plugin system to do whatever else your application requires.
 
-### Main Concepts
+## Main Concepts
 
-#### Entry 
+### Entry 
 
 An entry point indicates which module webpack should use to begin building out its internal dependency graph. Webpack will figure out which other modules and libraries that entry point depends on (directly and indirectly).
 
@@ -36,7 +36,7 @@ module.exports = {
 };
 ```
 
-#### Output
+### Output
 
 The output property tells webpack where to emit the bundles it creates and how to name these files. It defaults to ./dist/main.js for the main output file and to the ./dist folder for any other generated file.
 
@@ -54,7 +54,7 @@ module.exports = {
 };
 ```
 
-####  devServer
+###  devServer
 
 This set of options is picked up by webpack-dev-server and can be used to change its behavior in various ways. Here's a rudimentary example that gzips and serves everything from our public/ directory in the project root:
 
@@ -73,17 +73,17 @@ module.exports = {
 };
 ```
 
-#### devServer Options
+### devServer Options
 
-##### devServer.hot
-used for enabling hot module replacement
+#### devServer.hot 
+*used for enabling hot module replacement*
 
-##### devServer.port
-Specify a port number to listen for requests on.
+#### devServer.port
+*Specify a port number to listen for requests on.*
 
-##### devServer.watchFiles
+#### devServer.watchFiles
 
-This option allows you to configure a list of globs/directories/files to watch for file changes. For example:
+*This option allows you to configure a list of globs/directories/files to watch for file changes. For example:*
 
 ```
 module.exports = {
@@ -94,7 +94,7 @@ module.exports = {
 };
 ```
 
-#### Loaders
+### Loaders
 Out of the box, webpack only understands JavaScript and JSON files. Loaders allow webpack to process other types of files and convert them into valid modules that can be consumed by your application and added to the dependency graph.
 
 At a high level, loaders have two properties in your webpack configuration:
@@ -112,7 +112,12 @@ const path = require('path');
         filename: 'my-first-webpack.bundle.js',
     },
     module: {
-        rules: [{ test: /\.txt$/, use: 'raw-loader' }],
+      rules: [
+        { 
+          test: /\.txt$/, 
+          use: 'raw-loader' 
+        }
+      ],
     },
 };
 ```
@@ -155,13 +160,27 @@ module.exports = {
   },
 };
 ```
-### Plugins
+Images Loader Example:
+
+```
+module.exports = {
+  module: {
+    rules: [
+       {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+    ],
+  },
+};
+```
+## Plugins
 
 Plugins are the backbone of webpack. Webpack itself is built on the same plugin system that you use in your webpack configuration!
 
 They also serve the purpose of doing anything else that a loader cannot do. Webpack provides many such plugins out of the box.
 
-#### HTML Webpack Plugin
+### HTML Webpack Plugin
 Plugin that simplifies creation of HTML files to serve your bundles
 
 Installation
@@ -186,7 +205,7 @@ Example
 }
 ```
 
-#### MiniCssExtractPlugin
+### MiniCssExtractPlugin
 This plugin extracts CSS into separate files. It creates a CSS file per JS file which contains CSS. It supports On-Demand-Loading of CSS and SourceMaps.
 
 ```
@@ -233,7 +252,7 @@ module.exports = {
 };
 ```
 
-#### CssMinimizerWebpackPlugin
+### CssMinimizerWebpackPlugin
 
 This plugin uses cssnano to optimize and minify your CSS.
 

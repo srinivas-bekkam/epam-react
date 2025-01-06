@@ -4,17 +4,16 @@ import {lazy} from "react"
 
 import "./index.css";
 import Hello from "./Hello";
+import { Provider } from "react-redux";
+import { store } from "./Store/store";
 const Counter =  lazy(()=> import( "hostServer/Counter"));
-
 
 const App = () => (
   <div className="container">
-    <div>Name: remote1</div>
-    <div>Framework: react</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Empty CSS</div>
+    <Provider store={store}>
     <Hello/>
-    <Counter/>
+    {/* <Counter/> */}
+    </Provider>
   </div>
 );
 const rootElement = document.getElementById("app")
