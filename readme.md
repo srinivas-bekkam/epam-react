@@ -54,6 +54,46 @@ module.exports = {
 };
 ```
 
+####  devServer
+
+This set of options is picked up by webpack-dev-server and can be used to change its behavior in various ways. Here's a rudimentary example that gzips and serves everything from our public/ directory in the project root:
+
+```
+const path = require('path');
+
+module.exports = {
+  //...
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    compress: true,
+    port: 9000,
+  },
+};
+```
+
+#### devServer Options
+
+##### devServer.hot
+used for enabling hot module replacement
+
+##### devServer.port
+Specify a port number to listen for requests on.
+
+##### devServer.watchFiles
+
+This option allows you to configure a list of globs/directories/files to watch for file changes. For example:
+
+```
+module.exports = {
+  //...
+  devServer: {
+    watchFiles: ['src/**/*.php', 'public/**/*'],
+  },
+};
+```
+
 #### Loaders
 Out of the box, webpack only understands JavaScript and JSON files. Loaders allow webpack to process other types of files and convert them into valid modules that can be consumed by your application and added to the dependency graph.
 

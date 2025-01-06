@@ -12,10 +12,7 @@ const Hello =  lazy(()=> import( "remote/Hello"));
 
 const App = () => (
   <div className="container">
-    <div>Name: host</div>
-    <div>Framework: react</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Empty CSS</div>
+  
     <Suspense  fallback={<div>Loading...</div>}>
     <Hello/>
     </Suspense>

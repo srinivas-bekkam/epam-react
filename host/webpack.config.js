@@ -25,8 +25,10 @@ module.exports = (_, argv) => ({
 
   devServer: {
     port: 8080,
+    compress: true,
     historyApiFallback: true,
     watchFiles: [path.resolve(__dirname, 'src')],
+   //hot: true,
     onListening: function (devServer) {
       const port = devServer.server.address().port
 
@@ -114,5 +116,5 @@ module.exports = (_, argv) => ({
       template: "./src/index.html",
     }),
     new Dotenv(),
-  ],
+  ].filter(Boolean),
 });

@@ -8,8 +8,8 @@ export default function Counter(){
     return (
     <div>
         <button onClick={()=>{setCounter((ct)=>ct+1)}}>Counter : {counter}</button>
-        <Counter2/>
-        <Header/>
+        {/* <Counter2/>
+        <Header/> */}
     </div>
     )
 }
