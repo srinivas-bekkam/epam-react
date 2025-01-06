@@ -22,8 +22,8 @@ Following are some new hooks introduced by react 18
 ### useActionState
 useActionState is a Hook that allows you to update state based on the result of a form action.
 
-
-Example:
+<details>
+  <summary>Example</summary>
 
 ```
 import { useActionState, useState } from "react";
@@ -67,7 +67,10 @@ export function StatefulForm({}) {
 
 ```
 
+
+
 [CodeSandbox Example](https://codesandbox.io/p/sandbox/cnfcsz?file=%2Fsrc%2FApp.js%3A9%2C36)
+</details>
 
 
 ### useCallback
