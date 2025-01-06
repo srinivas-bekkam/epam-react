@@ -1,3 +1,5 @@
+###  [Go Back](/readme.md)
+
 ## Authentication
 
 Following are some Authentication types in web.
@@ -67,3 +69,4 @@ MFA by Microsoft login with Authenticator app which provides security code that 
 
 Single sign-on (SSO) provides a more seamless experience by reducing the number of times a user is asked for credentials. Users enter their credentials once, and the established session can be reused by other applications on the same device without further prompting.
 
+###  [Go Back](/readme.md)
