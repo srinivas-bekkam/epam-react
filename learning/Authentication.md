@@ -1,6 +1,6 @@
 ###  [Go Back](/readme.md)
 
-## Authentication
+# Authentication
 
 Following are some Authentication types in web.
 
@@ -11,13 +11,13 @@ Following are some Authentication types in web.
 5. Single sign-on (SSO)
 
 
-### Basic Authentication
+## Basic Authentication
 
 #### How it works:
 Users provide their username and password for authentication.
 
 
-### JWT (JSON Web Tokens)
+## JWT (JSON Web Tokens)
 
  #### Overview:
 
@@ -34,7 +34,7 @@ The token is sent with every request for protected resources.
 - Single Page Applications (SPAs).
 - Stateless APIs.
 
-### OAuth 2.0
+## OAuth 2.0
 
 #### Overview:
 
@@ -65,7 +65,7 @@ Multi-factor authentication (MFA) is a multi-step account login process that req
 #### Examples:
 MFA by Microsoft login with Authenticator app which provides security code that needs to be entered after password authentication is successful.
 
-### Single sign-on (SSO)
+## Single sign-on (SSO)
 
 Single sign-on (SSO) provides a more seamless experience by reducing the number of times a user is asked for credentials. Users enter their credentials once, and the established session can be reused by other applications on the same device without further prompting.
 
