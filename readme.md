@@ -299,3 +299,140 @@ module.exports = {
   },
 };
 ```
+
+
+### ModuleFederationPlugin
+
+The ModuleFederationPlugin allows a build to provide or consume modules with other independent builds at runtime.
+
+Installation
+```
+This is included with webpack 5
+```
+
+#### Sharing libraries:
+With the shared key in the configuration you can define libraries that are shared between your federated modules. The package name is the same as the one found in the dependencies section of your package.json. However, by default webpack will only share the root level of a library.
+```
+  const { ModuleFederationPlugin } = require('webpack').container;
+
+  module.exports = {
+    plugins: [
+      new ModuleFederationPlugin({
+        // adds date-fns as shared module
+        shared: ['date-fns'],
+      }),
+    ],
+  };
+```
+#### Sharing with Specify package versions
+
+1. Array syntax
+```
+const { ModuleFederationPlugin } = require('webpack').container;
+module.exports = {
+  plugins: [
+    new ModuleFederationPlugin({
+      // adds lodash as shared module
+      // version is inferred from package.json
+      // there is no version check for the required version
+      // so it will always use the higher version found
+      shared: ['lodash'],
+    }),
+  ],
+};
+```
+
+2. Object syntax
+```    module.exports = {
+  plugins: [
+    new ModuleFederationPlugin({
+      shared: {
+        // adds lodash as shared module
+        // version is inferred from package.json
+        // it will use the highest lodash version that is >= 4.17 and < 5
+        lodash: '^4.17.0',
+      },
+    }),
+  ],
+};
+```
+3. Object syntax with sharing hints
+```
+const deps = require('./package.json').dependencies;
+
+module.exports = {
+  plugins: [
+    new ModuleFederationPlugin({
+      shared: {
+        // adds react as shared module
+        react: {
+          requiredVersion: deps.react,
+          singleton: true,
+        },
+      },
+    }),
+  ],
+};
+```
+#### Exposing Modules
+Modules can be exposed from module federation which can be imported into other remote apps to use it. 
+
+
+```
+new ModuleFederationPlugin({
+  exposes: {
+   './Button':'./src/Button'
+  }
+});
+
+```
+
+#### Promise Based Dynamic Remotes
+Generally, remotes are configured using URL's like in this example. 
+
+```
+module.exports = {
+  plugins: [
+    new ModuleFederationPlugin({
+      name: 'host',
+      remotes: {
+        app1: 'app1@http://localhost:3001/remoteEntry.js',
+      },
+    }),
+  ],
+};
+
+```
+Steps to include remote app module into host app
+
+1. Expose module in remote app using module federation expose property as follows
+```
+new ModuleFederationPlugin({
+  exposes: {
+   './Button':'./src/Button'
+  }
+});
+
+```
+2. Add remote entry of 'remoteEntry.js' into current project where we would like to use the module as follows.
+```
+module.exports = {
+  plugins: [
+    new ModuleFederationPlugin({
+      name: 'host',
+      remotes: {
+        app1: 'app1@http://localhost:3001/remoteEntry.js',
+      },
+    }),
+  ],
+};
+
+```
+Here we added remote entry with name as "app1"
+
+3. Import Module to use it in app.
+```
+const Counter =  lazy(()=> import( "app1/Button"));
+```
+
+
