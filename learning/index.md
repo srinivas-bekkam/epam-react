@@ -1,4 +1,3 @@
-###  [Closures](/learning/Closures.md).
-###  [Design Patterns](/learning/DesignPatterns.md)
-###  [Webpack](/readme.md)
+###  [Webpack](/learning/Webpack.md)
+### [Authentication](/learning/Authentication.md)
 

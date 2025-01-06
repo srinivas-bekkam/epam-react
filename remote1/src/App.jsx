@@ -12,7 +12,7 @@ const App = () => (
   <div className="container">
     <Provider store={store}>
     <Hello/>
-    {/* <Counter/> */}
+    <Counter/>
     </Provider>
   </div>
 );
