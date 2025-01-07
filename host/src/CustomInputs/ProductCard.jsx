@@ -6,8 +6,18 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, cart } from '../Store/ShoppingCartReducer';
 
-export default function ProductCard({data}) {
+export default function ProductCard({data,hideAddToCart}) {
+  const dispatch= useDispatch();
+  const items= useSelector(cart)
+
+
+  const addItemToCart=()=>{
+    
+dispatch(addToCart(data))
+  }
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -19,18 +29,20 @@ export default function ProductCard({data}) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {data.title}
           </Typography>
-          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body1" sx={{ color: 'text.secondary' }} className='card-description'>
+          {data.description}
+          </Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary' }} className='card-description'>
+          ${data.price}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
+      <CardActions >
+       {hideAddToCart==false && <Button size="small" color="primary" className='right' onClick={addItemToCart} >
           Add To Card
-        </Button>
+        </Button>}
       </CardActions>
     </Card>
   );

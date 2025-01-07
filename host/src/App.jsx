@@ -16,6 +16,7 @@ import { Provider } from "react-redux";
 import { store } from "./Store/store";
 import LoginPage from "./login/LoginPage";
 import Routeconfig from "./RouteConfig";
+import Navigation from "./CustomInputs/Navigation";
 const Hello =  lazy(()=> import( "remote/Hello"));
 
 
@@ -25,6 +26,7 @@ const App = () => (
     <Suspense  fallback={<div>Loading...</div>}>
     <Provider store={store}>
     {/* <LoginPage></LoginPage> */}
+    <Navigation></Navigation>
     <Routeconfig></Routeconfig>
     </Provider>
     </Suspense>

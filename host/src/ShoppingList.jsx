@@ -49,7 +49,7 @@ export default function ShoppingList(){
         {data && data.map((alb)=>{
             return (<Grid key={alb.id} className="gl" size={{ xs: 6, md: 4, lg:3 }}>
                 {/* <h3>{alb.title}</h3> */}
-                <ProductCard data={alb}></ProductCard>
+                <ProductCard data={alb} hideAddToCart={false}></ProductCard>
             </Grid>)
         })}
           </Grid>
