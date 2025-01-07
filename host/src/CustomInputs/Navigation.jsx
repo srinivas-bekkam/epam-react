@@ -12,7 +12,8 @@ import Menu from '@mui/material/Menu';
 import { isAuthenticated } from '../services/LoginStatus';
 import { useSelector } from 'react-redux';
 import { cart } from '../Store/ShoppingCartReducer';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import {  Navigate, useNavigate } from 'react-router-dom';
+import { Link } from '@mui/material';
 
 
 export default function Navigation(props) {
@@ -35,7 +36,7 @@ export default function Navigation(props) {
     const gotoCart=()=>{
       setAnchorEl(null);
      // history("/cart")
-     props.history.push("/cart")
+//     props.history.push("/cart")
 
     }
   return (<div className='app-navigation'>
@@ -83,8 +84,9 @@ export default function Navigation(props) {
               >
                 <MenuItem onClick={handleClose}>Profile </MenuItem>
                 <MenuItem onClick={handleClose}>My account</MenuItem>
-              <MenuItem  onClick={gotoCart} >Cart ( {items.length})</MenuItem>
-              <MenuItem href="/cart">goto cart </MenuItem>
+                <MenuItem   
+                onClick={gotoCart} >Cart ( {items.length})</MenuItem>
+                <Link href="/cart">Link</Link>
               </Menu>
             </div>
           )}

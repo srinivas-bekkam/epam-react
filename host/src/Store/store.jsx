@@ -9,22 +9,23 @@ const persistConfig = {
     key: 'root',
     storage,
   }
-//   const rootReducer = combineReducers({
-//     ShoppingCart:ShoppingCart,
-//     [AlbumsQuery.reducerPath]:AlbumsQuery.reducer,
-//     [ShoppingCartQuery.reducerPath]:ShoppingCartQuery.reducer
-//   })
-//   const persistedReducer = persistReducer(persistConfig, rootReducer)
+  const rootReducer = combineReducers({
+    ShoppingCart:ShoppingCart,
+    [AlbumsQuery.reducerPath]:AlbumsQuery.reducer,
+    [ShoppingCartQuery.reducerPath]:ShoppingCartQuery.reducer
+  })
+  const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 
 export const store = configureStore({
-    reducer:{
-        ShoppingCart:ShoppingCart,
-       [AlbumsQuery.reducerPath]:AlbumsQuery.reducer,
-       [ShoppingCartQuery.reducerPath]:ShoppingCartQuery.reducer
-    },
-    middleware:(getDefaultMiddleware)=> getDefaultMiddleware().concat(AlbumsQuery.middleware,ShoppingCartQuery.middleware),
+    reducer:persistedReducer,
+    middleware:(getDefaultMiddleware)=> getDefaultMiddleware({
+        serializableCheck: {
+          ignoredActions: ["persist/PERSIST", "persist/REHYDRATE"],
+        },
+      }).concat(AlbumsQuery.middleware,ShoppingCartQuery.middleware),
 })
+export const persistor = persistStore(store);
 
 
 setupListeners(store.dispatch)

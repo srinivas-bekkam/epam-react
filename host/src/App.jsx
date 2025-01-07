@@ -13,10 +13,11 @@ import '@fontsource/roboto/700.css';
 import "./index.scss";
 import Counter from "./Counter";
 import { Provider } from "react-redux";
-import { store } from "./Store/store";
+import { persistor, store } from "./Store/store";
 import LoginPage from "./login/LoginPage";
 import Routeconfig from "./RouteConfig";
 import Navigation from "./CustomInputs/Navigation";
+import { PersistGate } from "redux-persist/integration/react";
 const Hello =  lazy(()=> import( "remote/Hello"));
 
 
@@ -25,9 +26,11 @@ const App = () => (
   <div className="container">
     <Suspense  fallback={<div>Loading...</div>}>
     <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
     {/* <LoginPage></LoginPage> */}
     <Navigation></Navigation>
     <Routeconfig></Routeconfig>
+    </PersistGate>
     </Provider>
     </Suspense>
    
