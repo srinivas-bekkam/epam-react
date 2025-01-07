@@ -104,8 +104,8 @@ module.exports = (_, argv) => ({
       },
       exposes: {
         "./Counter":"./src/Counter.jsx",
-        "./AlbumsQuery":"./src/Store/AlbumsQuery.jsx"
-
+        "./AlbumsQuery":"./src/Store/AlbumsQuery.jsx",
+        "./ShoppingCartQuery":"./src/Store/ShoppingCartQuery.jsx"
       },
       shared: {
         ...deps,

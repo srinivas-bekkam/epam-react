@@ -1,7 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { AlbumsQuery } from "./AlbumsQuery";
+import { AlbumsQuery } from "hostServer/AlbumsQuery";
+
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { ShoppingCartQuery } from "./ShoppingCartQuery";
+import { ShoppingCartQuery } from "hostServer/ShoppingCartQuery";
+
 
 export const store = configureStore({
     reducer:{
