@@ -3,9 +3,11 @@ import { Form, Formik } from "formik";
 import * as Yup from "yup"
 import InputText from "../CustomInputs/InputText";
 import InputPassword from "../CustomInputs/InputPassword";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
-  
+    const navigate = useNavigate();
+
     
     return(<div className="login-page">
         <Formik
@@ -20,7 +22,13 @@ export default function LoginPage() {
             }
         )}
         onSubmit={(values)=>{
-alert(JSON.stringify(values))
+//alert(JSON.stringify(values))
+if(values.username==="admin" && values.password==="admin"){
+    localStorage.setItem("authenticated",true);
+    navigate('/products')
+return;
+}
+
         }}
         >
             <>

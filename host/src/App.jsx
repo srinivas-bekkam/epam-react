@@ -2,16 +2,20 @@ import React from "react";
 import { lazy, Suspense } from 'react';
 
 import ReactDOM from "react-dom/client";
-// Bootstrap CSS
-import "bootstrap/dist/css/bootstrap.min.css";
-// Bootstrap Bundle JS
-import "bootstrap/dist/js/bootstrap.bundle.min";
-
+// // Bootstrap CSS
+// import "bootstrap/dist/css/bootstrap.min.css";
+// // Bootstrap Bundle JS
+// import "bootstrap/dist/js/bootstrap.bundle.min";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 import "./index.scss";
 import Counter from "./Counter";
 import { Provider } from "react-redux";
 import { store } from "./Store/store";
 import LoginPage from "./login/LoginPage";
+import Routeconfig from "./RouteConfig";
 const Hello =  lazy(()=> import( "remote/Hello"));
 
 
@@ -20,7 +24,8 @@ const App = () => (
   <div className="container">
     <Suspense  fallback={<div>Loading...</div>}>
     <Provider store={store}>
-    <LoginPage></LoginPage>
+    {/* <LoginPage></LoginPage> */}
+    <Routeconfig></Routeconfig>
     </Provider>
     </Suspense>
    

@@ -1,0 +1,20 @@
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import PrivateRoutes from './PrivateRoutes'
+import LoginPage from './login/LoginPage'
+import ShoppingList from './ShoppingList'
+import Albums from './Albums'
+
+export default function Routeconfig(){
+    return(<>
+<Router>
+<Routes>
+  <Route element={<PrivateRoutes/>}>
+      <Route path='/' element={<ShoppingList/>} />
+      <Route path='/products' element={<ShoppingList/>} />
+  </Route>
+  <Route path='/login' element={<LoginPage/>}/>
+</Routes>
+</Router>
+</>)
+}

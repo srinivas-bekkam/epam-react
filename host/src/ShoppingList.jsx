@@ -6,6 +6,7 @@ import Header from "./Header"
 import Svg from '../src/react-svg.svg'
 import { useGetAlbumsQuery } from "./Store/AlbumsQuery"
 import { useGetShoppingListQuery } from "./Store/ShoppingCartQuery"
+import { Button } from "@mui/material"
 export default function ShoppingList(){
      let [page, setPage]=useState(1)
      const pageSize=10;
@@ -34,6 +35,7 @@ export default function ShoppingList(){
     
     return (
     <div>
+        {/* <Button variant="contained"> Button</Button> */}
         {isFetching && `Loading...`}
         {data && data.map((alb)=>{
             return (<div key={alb.id}>
