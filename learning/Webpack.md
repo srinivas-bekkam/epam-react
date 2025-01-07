@@ -144,6 +144,12 @@ module.exports = {  
 
 Scss Loader Example:
 
+To begin, you'll need to install sass-loader:
+
+``` 
+npm install sass-loader sass webpack --save-dev
+```
+Then, add following code in Webpack.config.js
 ```
 module.exports = {
   module: {
