@@ -1,16 +1,16 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { AlbumsQuery } from "./AlbumsQuery";
 import { setupListeners } from "@reduxjs/toolkit/query";
 import { ShoppingCartQuery } from "./ShoppingCartQuery";
-import ShoppingCart from "./ShoppingCartReducer"
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
+import { AlbumsQuery } from "./AlbumsQuery";
+import { ShoppingCartReducer } from "./ShoppingCartReducer";
 const persistConfig = {
     key: 'root',
     storage,
   }
   const rootReducer = combineReducers({
-    ShoppingCart:ShoppingCart,
+    ShoppingCart:ShoppingCartReducer,
     [AlbumsQuery.reducerPath]:AlbumsQuery.reducer,
     [ShoppingCartQuery.reducerPath]:ShoppingCartQuery.reducer
   })

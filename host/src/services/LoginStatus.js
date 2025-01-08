@@ -1,4 +1,4 @@
-import { persistor } from "../Store/store";
+import { persistor } from "../reduxstore/store";
 
 export function isAuthenticated(){
     return localStorage.getItem("authenticated")=="true";

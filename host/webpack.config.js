@@ -104,8 +104,8 @@ module.exports = (_, argv) => ({
       },
       exposes: {
         "./Counter":"./src/components/Counter.jsx",
-        "./AlbumsQuery":"./src/Store/AlbumsQuery.jsx",
-        "./ShoppingCartQuery":"./src/Store/ShoppingCartQuery.jsx"
+        "./AlbumsQuery":"./src/reduxstore/AlbumsQuery.jsx",
+        "./ShoppingCartQuery":"./src/reduxstore/ShoppingCartQuery.jsx"
       },
       shared: {
         ...deps,

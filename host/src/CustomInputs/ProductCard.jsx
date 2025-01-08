@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, cart } from '../Store/ShoppingCartReducer';
+import { addToCart, cart } from '../reduxstore/ShoppingCartReducer';
 
 export default function ProductCard({data,hideAddToCart}) {
   const dispatch= useDispatch();

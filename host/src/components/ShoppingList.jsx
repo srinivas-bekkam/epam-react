@@ -1,12 +1,12 @@
 import * as React from "react"
 
 import { useState} from "react"
-import Counter2 from "./components/Counter2"
-import Header from "./components/Header"
-import { useGetAlbumsQuery } from "./Store/AlbumsQuery"
-import { useGetShoppingListQuery } from "./Store/ShoppingCartQuery"
+import Counter2 from "./Counter2"
+import Header from "./Header"
+import { useGetAlbumsQuery } from "../reduxstore/AlbumsQuery"
+import { useGetShoppingListQuery } from "../reduxstore/ShoppingCartQuery"
 import { Button } from "@mui/material"
-import ProductCard from "./CustomInputs/ProductCard"
+import ProductCard from "../CustomInputs/ProductCard"
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid2';

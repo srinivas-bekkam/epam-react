@@ -13,7 +13,7 @@ import '@fontsource/roboto/700.css';
 import "./index.scss";
 import Counter from "./components/Counter";
 import { Provider } from "react-redux";
-import { persistor, store } from "./Store/store";
+import { persistor, store } from "./reduxstore/store";
 import LoginPage from "./Pages/login/LoginPage";
 import Routeconfig from "./routing/RouteConfig";
 import Navigation from "./CustomInputs/Navigation";

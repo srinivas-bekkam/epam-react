@@ -17,4 +17,4 @@ const ShoppingCart=createSlice({
 })
 export const cart= (state)=> state.ShoppingCart.cart;
 export const {addToCart, clearCart}=ShoppingCart.actions;
-export default ShoppingCart.reducer
+export const ShoppingCartReducer = ShoppingCart.reducer

@@ -1,7 +1,7 @@
 import React from "react"
 import { useState} from "react"
 import Albums from "./Albums"
-import ShoppingList from "../ShoppingList"
+import ShoppingList from "./ShoppingList"
 import Button from '@mui/material/Button';
 export default function Counter(){
     let [counter, setCounter]=useState(0)

@@ -11,7 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { isAuthenticated, logout } from '../services/LoginStatus';
 import { useSelector } from 'react-redux';
-import { cart } from '../Store/ShoppingCartReducer';
+import { cart } from '../reduxstore/ShoppingCartReducer';
 import {  Navigate, useNavigate } from 'react-router-dom';
 import { Link } from '@mui/material';
 import { LoginContext } from '../providers/LoginContext';

@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import PrivateRoutes from './PrivateRoutes'
 import LoginPage from '../Pages/login/LoginPage'
-import ShoppingList from '../ShoppingList'
+import ShoppingList from '../components/ShoppingList'
 import Albums from '../components/Albums'
 import { CartList } from '../components/CartList'
 

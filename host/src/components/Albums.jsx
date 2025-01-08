@@ -3,7 +3,7 @@ import * as React from "react"
 import { useState} from "react"
 import Counter2 from "./Counter2"
 import Header from "./Header"
-import { useGetAlbumsQuery } from "../Store/AlbumsQuery"
+import { useGetAlbumsQuery } from "../reduxstore/AlbumsQuery"
 export default function Albums(){
      let [page, setPage]=useState(1)
     const {data, isFetching} = useGetAlbumsQuery(page)
