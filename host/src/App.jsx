@@ -19,7 +19,7 @@ import Routeconfig from "./RouteConfig";
 import Navigation from "./CustomInputs/Navigation";
 import { PersistGate } from "redux-persist/integration/react";
 import { BrowserRouter, Router } from "react-router-dom";
-import { LoginContext } from "./ContextProviders/LoginContext";
+import { LoginContext } from "./providers/LoginContext";
 import { isAuthenticated } from "./services/LoginStatus";
 const Hello =  lazy(()=> import( "remote/Hello"));
 

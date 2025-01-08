@@ -14,7 +14,7 @@ import { useSelector } from 'react-redux';
 import { cart } from '../Store/ShoppingCartReducer';
 import {  Navigate, useNavigate } from 'react-router-dom';
 import { Link } from '@mui/material';
-import { LoginContext } from '../ContextProviders/LoginContext';
+import { LoginContext } from '../providers/LoginContext';
 
 
 export default function Navigation(props) {

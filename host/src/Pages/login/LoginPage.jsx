@@ -5,7 +5,7 @@ import InputText from "../../CustomInputs/InputText";
 import InputPassword from "../../CustomInputs/InputPassword";
 import { useNavigate } from "react-router-dom";
 import { isAuthenticated } from "../../services/LoginStatus";
-import { LoginContext } from "../../ContextProviders/LoginContext";
+import { LoginContext } from "../../providers/LoginContext";
 
 export default function LoginPage() {
     const navigate = useNavigate();
