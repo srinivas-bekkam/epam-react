@@ -9,18 +9,21 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import { isAuthenticated } from '../services/LoginStatus';
+import { isAuthenticated, logout } from '../services/LoginStatus';
 import { useSelector } from 'react-redux';
 import { cart } from '../Store/ShoppingCartReducer';
 import {  Navigate, useNavigate } from 'react-router-dom';
 import { Link } from '@mui/material';
+import { LoginContext } from '../ContextProviders/LoginContext';
 
 
 export default function Navigation(props) {
   const items= useSelector((state)=>state.ShoppingCart.cart)
-    const [auth, setAuth] = React.useState(isAuthenticated());
+   // const [auth, setAuth] = React.useState(isAuthenticated());
+   const [auth,setAuth]= React.useContext(LoginContext)
+   console.log('auth context',auth)
     const [anchorEl, setAnchorEl] = React.useState(null);
-   // let history = useNavigate();
+    let history = useNavigate();
   
     const handleChange = (event) => {
       setAuth(event.target.checked);
@@ -35,9 +38,14 @@ export default function Navigation(props) {
     };
     const gotoCart=()=>{
       setAnchorEl(null);
-     // history("/cart")
+      history("/cart")
 //     props.history.push("/cart")
 
+    }
+    const logoutAndRouteToLogin=()=>{
+      logout()
+      setAuth(false)
+      history("/login")
     }
   return (<div className='app-navigation'>
     <Box sx={{ flexGrow: 1 }} >
@@ -86,7 +94,8 @@ export default function Navigation(props) {
                 <MenuItem onClick={handleClose}>My account</MenuItem>
                 <MenuItem   
                 onClick={gotoCart} >Cart ( {items.length})</MenuItem>
-                <Link href="/cart">Link</Link>
+                <MenuItem   
+                onClick={logoutAndRouteToLogin} >Logout </MenuItem>
               </Menu>
             </div>
           )}

@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Form, Formik } from "formik";
 import * as Yup from "yup"
-import InputText from "../CustomInputs/InputText";
-import InputPassword from "../CustomInputs/InputPassword";
+import InputText from "../../CustomInputs/InputText";
+import InputPassword from "../../CustomInputs/InputPassword";
 import { useNavigate } from "react-router-dom";
+import { isAuthenticated } from "../../services/LoginStatus";
+import { LoginContext } from "../../ContextProviders/LoginContext";
 
 export default function LoginPage() {
     const navigate = useNavigate();
+    const [auth,setAuth]=useContext(LoginContext)
 
     
     return(<div className="login-page">
@@ -25,6 +28,7 @@ export default function LoginPage() {
 //alert(JSON.stringify(values))
 if(values.username==="admin" && values.password==="admin"){
     localStorage.setItem("authenticated",true);
+    setAuth(true)
     navigate('/products')
 return;
 }
