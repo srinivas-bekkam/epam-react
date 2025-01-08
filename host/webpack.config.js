@@ -103,7 +103,7 @@ module.exports = (_, argv) => ({
         remote:"remote1@http://localhost:3001/remoteEntry.js"
       },
       exposes: {
-        "./Counter":"./src/Counter.jsx",
+        "./Counter":"./src/components/Counter.jsx",
         "./AlbumsQuery":"./src/Store/AlbumsQuery.jsx",
         "./ShoppingCartQuery":"./src/Store/ShoppingCartQuery.jsx"
       },

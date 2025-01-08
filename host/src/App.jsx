@@ -11,7 +11,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import "./index.scss";
-import Counter from "./Counter";
+import Counter from "./components/Counter";
 import { Provider } from "react-redux";
 import { persistor, store } from "./Store/store";
 import LoginPage from "./Pages/login/LoginPage";

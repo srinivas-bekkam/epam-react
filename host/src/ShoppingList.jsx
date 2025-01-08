@@ -1,8 +1,8 @@
 import * as React from "react"
 
 import { useState} from "react"
-import Counter2 from "./Counter2"
-import Header from "./Header"
+import Counter2 from "./components/Counter2"
+import Header from "./components/Header"
 import { useGetAlbumsQuery } from "./Store/AlbumsQuery"
 import { useGetShoppingListQuery } from "./Store/ShoppingCartQuery"
 import { Button } from "@mui/material"

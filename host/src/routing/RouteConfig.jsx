@@ -4,7 +4,7 @@ import PrivateRoutes from './PrivateRoutes'
 import LoginPage from '../Pages/login/LoginPage'
 import ShoppingList from '../ShoppingList'
 import Albums from '../components/Albums'
-import { CartList } from '../CartList'
+import { CartList } from '../components/CartList'
 
 export default function Routeconfig(){
     return(<>

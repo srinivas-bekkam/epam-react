@@ -1,8 +1,8 @@
 import * as React from "react"
 
 import { useState} from "react"
-import Counter2 from "../Counter2"
-import Header from "../Header"
+import Counter2 from "./Counter2"
+import Header from "./Header"
 import { useGetAlbumsQuery } from "../Store/AlbumsQuery"
 export default function Albums(){
      let [page, setPage]=useState(1)
