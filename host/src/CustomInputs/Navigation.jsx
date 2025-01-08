@@ -23,7 +23,7 @@ export default function Navigation(props) {
    const [auth,setAuth]= React.useContext(LoginContext)
    console.log('auth context',auth)
     const [anchorEl, setAnchorEl] = React.useState(null);
-    let history = useNavigate();
+    let navigate = useNavigate();
   
     const handleChange = (event) => {
       setAuth(event.target.checked);
@@ -38,14 +38,20 @@ export default function Navigation(props) {
     };
     const gotoCart=()=>{
       setAnchorEl(null);
-      history("/cart")
-//     props.history.push("/cart")
+      navigate("/cart")
+//     props.navigate.push("/cart")
 
+    }
+    const gotoMusic=()=>{
+      navigate("/albums")
+    }
+    const gotoProducts=()=>{
+      navigate("/products")
     }
     const logoutAndRouteToLogin=()=>{
       logout()
       setAuth(false)
-      history("/login")
+      navigate("/login")
     }
   return (<div className='app-navigation'>
     <Box sx={{ flexGrow: 1 }} >
@@ -92,6 +98,8 @@ export default function Navigation(props) {
               >
                 <MenuItem onClick={handleClose}>Profile </MenuItem>
                 <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={gotoProducts}>Products</MenuItem>
+                <MenuItem onClick={gotoMusic}>Music</MenuItem>
                 <MenuItem   
                 onClick={gotoCart} >Cart ( {items.length})</MenuItem>
                 <MenuItem   

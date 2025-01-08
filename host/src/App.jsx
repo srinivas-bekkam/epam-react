@@ -15,7 +15,7 @@ import Counter from "./Counter";
 import { Provider } from "react-redux";
 import { persistor, store } from "./Store/store";
 import LoginPage from "./Pages/login/LoginPage";
-import Routeconfig from "./RouteConfig";
+import Routeconfig from "./routing/RouteConfig";
 import Navigation from "./CustomInputs/Navigation";
 import { PersistGate } from "redux-persist/integration/react";
 import { BrowserRouter, Router } from "react-router-dom";
