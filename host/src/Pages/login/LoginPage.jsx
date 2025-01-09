@@ -6,11 +6,18 @@ import InputPassword from "../../CustomInputs/InputPassword";
 import { useNavigate } from "react-router-dom";
 import { isAuthenticated } from "../../services/LoginStatus";
 import { LoginContext } from "../../providers/LoginContext";
+import { GoogleLogin } from '@react-oauth/google';
+import { Button } from "@mui/material";
 
 export default function LoginPage() {
     const navigate = useNavigate();
     const [auth,setAuth]=useContext(LoginContext)
-
+const onGoogleLoginSuccess=(creadentials)=>{
+    console.log(creadentials)
+    localStorage.setItem("authenticated",true);
+    setAuth(true)
+    navigate('/products')
+}
     
     return(<div className="login-page">
         <Formik
@@ -40,14 +47,28 @@ return;
             <Form>
             <div className=" row login-form col-6">
                 <div className=" col-7">              
-                <InputText name="username" label="User Name" placeholder="admin"></InputText>
+                <InputText name="username" label="User Name" placeholder="admin" fullWidth></InputText>
                 </div>
                 <div className=" col-7">              
 
                 <InputPassword name="password" label="Password" placeholder="admin"></InputPassword>
                 </div>
                 <div className="row col-7">              
-            <button type="submit" class="btn btn-primary">Login</button>
+            <Button type="submit" variant="contained" fullWidth>Login</Button>
+            <fieldset class="title">
+    <legend>OR</legend>
+</fieldset>
+            <div className="google-login-container">
+            <GoogleLogin
+  onSuccess={credentialResponse => {
+   onGoogleLoginSuccess(credentialResponse)
+  }}
+  onError={() => {
+    console.log('Login Failed');
+  }}
+/>
+</div>
+
             </div>
             </div>
             </Form>

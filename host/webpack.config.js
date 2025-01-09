@@ -17,6 +17,7 @@ const isDevelopment = process.env.NODE_ENV !== 'production';
 module.exports = (_, argv) => ({
   output: {
     publicPath: "http://localhost:8080/",
+     clean: true,
   },
 
   resolve: {

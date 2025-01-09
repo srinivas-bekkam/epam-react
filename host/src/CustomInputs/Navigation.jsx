@@ -16,6 +16,7 @@ import {  Navigate, useNavigate } from 'react-router-dom';
 import { Link } from '@mui/material';
 import { LoginContext } from '../providers/LoginContext';
 
+import { googleLogout } from '@react-oauth/google';
 
 export default function Navigation(props) {
   const items= useSelector((state)=>state.ShoppingCart.cart)
@@ -49,6 +50,7 @@ export default function Navigation(props) {
       navigate("/products")
     }
     const logoutAndRouteToLogin=()=>{
+      googleLogout();
       logout()
       setAuth(false)
       navigate("/login")

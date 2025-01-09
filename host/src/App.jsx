@@ -21,6 +21,8 @@ import { PersistGate } from "redux-persist/integration/react";
 import { BrowserRouter, Router } from "react-router-dom";
 import { LoginContext } from "./providers/LoginContext";
 import { isAuthenticated } from "./services/LoginStatus";
+import { GoogleOAuthProvider } from '@react-oauth/google';
+
 const Hello =  lazy(()=> import( "remote/Hello"));
 
 
@@ -34,12 +36,15 @@ const App = () => {
     <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
     <BrowserRouter>
+    <GoogleOAuthProvider clientId="24287815517-m4nisbcbqf12ld956l6e16mbrnde71da.apps.googleusercontent.com">
+
     <LoginContext.Provider value={[auth,setAuth]}>
 
     {/* <LoginPage></LoginPage> */}
     <Navigation></Navigation>
     <Routeconfig></Routeconfig>
     </LoginContext.Provider>
+    </GoogleOAuthProvider>
     </BrowserRouter>
 
     </PersistGate>
