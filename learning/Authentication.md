@@ -10,7 +10,16 @@ Following are some Authentication types in web.
 4. Multi-Factor Authentication (MFA)
 5. Single sign-on (SSO)
 
+What is Authentication?
 
+    Authentication is the process of verifying the identity of an individual or system.
+
+Why?
+- **Protection Against Unauthorised Access:** Authentication ensures that only authorised individuals or systems can access sensitive information, preventing data breaches and cyber threats.
+- **Compliance:** Many regulations and laws require organisations to implement authentication to protect sensitive data and avoid penalties and legal consequences.
+- **Convenience:** Different authentication methods, such as single sign-on and biometric authentication, make it easier for users to access resources, improving the overall user experience.
+- **Auditing and Accountability:** Authentication helps track and monitor access to sensitive information, enabling organisations to identify security breaches and meet data retention and reporting requirements.
+- **Trust and Reputation:** Strong authentication builds trust with customers, partners, and stakeholders, demonstrating an organisation's commitment to security and protecting its reputation in the industry.
 ## Basic Authentication
 
 #### How it works:
@@ -68,5 +77,10 @@ MFA by Microsoft login with Authenticator app which provides security code that 
 ## Single sign-on (SSO)
 
 Single sign-on (SSO) provides a more seamless experience by reducing the number of times a user is asked for credentials. Users enter their credentials once, and the established session can be reused by other applications on the same device without further prompting.
+
+Additional Resources:
+
+- [Stateful and stateless authentication](https://medium.com/@kennch/stateful-and-stateless-authentication-10aa3e3d4986)
+- [5 Reasons Authentication is Important](https://www.robinwaite.com/blog/5-reasons-authentication-is-important#:~:text=Authentication%20is%20the%20process%20of,against%20unauthorised%20access%20to%20resources.)
 
 ###  [Go Back](/readme.md)

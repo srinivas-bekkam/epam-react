@@ -183,3 +183,13 @@ TypeScript is an open-source pure object-oriented programing language. It is a s
 **ES6**
 
 ECMAScript (ES) is a scripting language specification standardized by ECMA international. It was created to standardize JavaScript. The ES scripting language contains many implementations, and the most popular is JavaScript. The developers use ECMAScript mostly for client-side scripting of World Wide Web (WWW).
+
+
+MFE topics
+ 
+Intro - https://blog.logrocket.com/build-micro-frontend-application-react/
+Communication 
+https://sharvishi9118.medium.com/cross-micro-frontend-communication-techniques-a10fedc11c59
+https://dev.to/luistak/cross-micro-frontends-communication-30m3
+
+Implementation - https://www.clickittech.com/developer/microfrontends/
