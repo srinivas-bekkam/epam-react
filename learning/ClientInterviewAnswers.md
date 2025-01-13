@@ -470,9 +470,42 @@ Interviewers - Venkat Chintalapati
 ---
 
 8) How do you maintain the quality of the code?
-- Adhering to Best Practices
--  Writing Clean Code
-- Conducting Code Reviews
-- Writing and Maintaining Tests
-- Using Static Analysis Tools
-- Refactoring Regularly
+
+    - Adhering to Best Practices
+    -  Writing Clean Code
+    - Conducting Code Reviews
+    - Writing and Maintaining Tests
+    - Using Static Analysis Tools
+    - Refactoring Regularly
+    
+---
+
+- What best practices should be followed when integrating and utilizing third-party components, such as AG Grid, in a React application? What key considerations should be taken into account?
+
+    Answer:
+
+    - Compatibility
+    - Features
+    - Documentation
+    - Community and Support:
+
+
+---
+
+- What are the main differences between Redux and Redux Toolkit? What advantages does Redux Toolkit provide over traditional Redux?
+
+Answer:
+
+| **Feature** | **Redux (Traditional)** | **Redux Toolkit (RTK)** |
+| --- | --- | --- |
+| **Boilerplate Code** | Requires a lot of boilerplate for actions, reducers, and store configuration. | Significantly reduces boilerplate with utilities like `createSlice`. |
+| **State Immutability** | Requires explicit handling of immutability (e.g., using `spread` or libraries). | Uses **Immer.js** internally for automatic immutability. |
+| **Action Creation** | Actions must be manually created using `action.type` strings and creators. | Automatically generates actions with `createSlice`. |
+| **Middleware Setup** | Middleware (e.g., `redux-thunk`) must be added manually. | Pre-configures middleware like `redux-thunk`. |
+| **Store Configuration** | Must manually combine reducers and apply middleware. | Simplifies store setup with `configureStore`. |
+| **Best Practices** | Relies on developers to follow best practices manually. | Enforces Redux best practices by design. |
+| **RTK Query** | Not available. | Built-in tool for managing data fetching and caching. |
+
+
+--
+

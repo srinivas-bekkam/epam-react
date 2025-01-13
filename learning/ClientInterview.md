@@ -1014,7 +1014,6 @@ A system design round similar to in MAANG companies, which is ideal but not the 
 
 Tharakesh Pulikonda
 02/05/24 13:01
-Edited
 design a eShop such that as an administrator I am interested to see/manage 
 observability
 configuration management to scale up or scale down app clusters
@@ -1039,17 +1038,19 @@ S&P - Interview Questions 1st round:
  1. Previous Project and work experince
  2. Coding task Build React app with Routing --> Two Components A and B. Add Navigation with four links and onclick route to respective components.Follow up questions what if we have captialletters in route path. How browser treats that. how to prevent that.
 3. what does below code does
+```
 		"build:dev": "webpack --mode=production --config webpack.config.js --env environment=dev url=https://nrp-job-mfe.mfe.dev.spratingsvpc.com/",
 		"build:si": "webpack --mode=production --config webpack.config.js --env environment=si url=https://nrp-job-mfe.mfe.si.spratingsvpc.com/",
 		"build:qa": "webpack --mode=production --config webpack.config.js --env environment=qa url=https://nrp-job-mfe.mfe.qa.spratingsvpc.com/",
 		"build:uat": "webpack --mode=production --config webpack.config.js --env environment=uat url=https://nrp-job-mfe.mfe.uat.spratingsvpc.com/",
 		"build:prod": "webpack --mode=production --config webpack.config.js --env environment=prod url=https://nrp-job-mfe.mfe.prod.spratingsvpc.com/",
 		"build": "npm run build:dev && run-p -ln --max-parallel 3 build:si build:qa build:uat build:prod",
+```
+
 4.what does below code does
 	 "lint-staged": {
 		"./src/**/*.{js,ts,tsx}": "eslint --fix"
 	  }
- 
 5. React VDOM and how it works
 6. Class vs Functional Components. When to use what?
 7. Various hooks and there uses cases used in project
@@ -1092,31 +1093,33 @@ interviewer - Gangi Reddy
  
 12) what is a ts config file and why do we need it
  
-13) explain the below code and what does  the props do  
-<Switch>
-<Route exact path="/" component={ViewJobs} />
-<Route sensitive path="/viewactivejobs" component={ViewJobs} />
-<Route sensitive path="/createJob" component={CreateJobComponent} />
-<Route sensitive path="/workflow" component={WorkFlow} />
-<Route
-      sensitive
-      path="/viewupdatejobdetails"
-      component={CreateJobComponent}
-    />
-<Route path="*" component={NoMatch} />
-</Switch>
+13) explain the below code and what does  the props do 
+``` 
+    <Switch>
+    <Route exact path="/" component={ViewJobs} />
+    <Route sensitive path="/viewactivejobs" component={ViewJobs} />
+    <Route sensitive path="/createJob" component={CreateJobComponent} />
+    <Route sensitive path="/workflow" component={WorkFlow} />
+    <Route
+        sensitive
+        path="/viewupdatejobdetails"
+        component={CreateJobComponent}
+        />
+    <Route path="*" component={NoMatch} />
+    </Switch>
+```
  
 14) what if need  multiple components to render within a single route
  
 15) explain the below code
- 
+ ```
 "build:dev": "webpack --mode=production --config webpack.config.js --env environment=dev url=https://nrp-assesment-mfe.dev.spratingsvpc.com/",
     "build:si": "webpack --mode=production --config webpack.config.js --env environment=si url=https://nrp-assesment-mfe.si.spratingsvpc.com/",
     "build:qa": "webpack --mode=production --config webpack.config.js --env environment=qa url=https://nrp-assesment-mfe.qa.spratingsvpc.com/",
     "build:uat": "webpack --mode=production --config webpack.config.js --env environment=uat url=https://nrp-assesment-mfe.uat.spratingsvpc.com/",
     "build:prod": "webpack --mode=production --config webpack.config.js --env environment=prod url=https://nrp-assesment-mfe.prod.spratingsvpc.com/",
     "build": "npm run build:dev && run-p -ln --max-parallel 3 build:si build:qa build:uat build:prod",
-
+```
 
 --- 
 
