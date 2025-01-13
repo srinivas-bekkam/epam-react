@@ -282,20 +282,49 @@ books = [
 ];
  
 7. write the pollyfill for map and multiply the array elements with 2
- 
-====
+
+---
+
 8. what is Box Model
+
+---
+
 9. what is diff between display none & hidden
- 
-===
+
+---
+
 10. what is class and functional comp and difference between them
+
+---
+
 11. what is state in a component
+
+---
+
 12. communication between components parent to child and child to parent
+
+---
+
 13. what is redux and concepts of redux?
+
+---
+
 14. how to use map method inside react jsx importance of key property?
+
+---
+
 15. optimization techniques in react?
+
+---
+
 16. fetch  the data  from the https://jsonplaceholder.typicode.com/users using React
+
+---
+
 17. Difference between Local storage, session storage, cookies 
+
+---
+
 18. Difference between null and unedfined
 ---
 
@@ -1463,42 +1492,47 @@ Akshay Puram
 
 interview questions for 2nd round SNP client(gangi reddy)
 1) coding question on react-router
-2)what are the options that we can write in the Route tag
-3)how to pass the logged in info to the components present in the routes
+2) what are the options that we can write in the Route tag
+3) how to pass the logged in info to the components present in the routes
 4) explain the below code 
-<AuthContext.Provider value={props.authObj}>
-<UserContext.Provider value={props.userObj}>
-<NotificationProvider type={NotificationStyle.TOAST} delay={5000}>
-<Suspense fallback={<LoadingBar />}>
-<QueryClientProvider client={queryClient}>
-<BrowserRouter basename="/job">
-<Layout>
-<Routes />
-</Layout>
-</BrowserRouter>
-</QueryClientProvider>
-</Suspense>
-</NotificationProvider>
-</UserContext.Provider>
-</AuthContext.Provider>
-5)how reacts works explain
-6)explain reduction in react
-7)what are the different ways to rerender a component
-8)is it possible to modify the props that are passed to children from children component
-9)how to change the data present in parent from children
-10)what is the use of tsconfig.json file what do we write in it
-11)we have 10 api calls and if we want to intercept that request and add headers how can we do it ?(axios instance and interceptors)
-12)what is the main difference between fetch and axios when we use each of them?
-13)any experience in java?
+
+    ```
+    <AuthContext.Provider value={props.authObj}>
+        <UserContext.Provider value={props.userObj}>
+            <NotificationProvider type={NotificationStyle.TOAST} delay={5000}>
+                <Suspense fallback={
+                    <LoadingBar />}>
+                    <QueryClientProvider client={queryClient}>
+                        <BrowserRouter basename="/job">
+                            <Layout>
+                                <Routes />
+                            </Layout>
+                        </BrowserRouter>
+                    </QueryClientProvider>
+                </Suspense>
+            </NotificationProvider>
+        </UserContext.Provider>
+    </AuthContext.Provider>
+
+    ```
+5) how reacts works explain
+6) explain reduction in react
+7) what are the different ways to rerender a component
+8) is it possible to modify the props that are passed to children from children component
+9) how to change the data present in parent from children
+10) what is the use of tsconfig.json file what do we write in it
+11) we have 10 api calls and if we want to intercept that request and add headers how can we do it ?(axios instance and interceptors)
+12) what is the main difference between fetch and axios when we use each of them?
+13) any experience in java?
  
 questions from Amit
-1)explain about project
-2)any backend experience
-3)what is ur primary skill
-4)any database experience can you write sample queries
-5)what kind of store you have used in your project and why did you use it?
-6)are you ok to work on angular if given chance? how easily you can transition?
-7)Do you know microfrontends?
+1) explain about project
+2) any backend experience
+3) what is ur primary skill
+4) any database experience can you write sample queries
+5) what kind of store you have used in your project and why did you use it?
+6) are you ok to work on angular if given chance? how easily you can transition?
+7) Do you know microfrontends?
 
 
 Harendra Sharma
@@ -1571,26 +1605,27 @@ JavaScript
 
 
 Santosh Kumar1
-23/10/24 23:07
+
+Date: 23/10/24 23:07
 
 Syam:
  
-Recent project explanation
-Authentication and Authorization mechanism
-Where you stored the token and why
-Why we need .env files
-some plugins in Webpack
-custom hooks and examples
-Why you have used the Redux
-useCallback, useMemo differences
-Write the example for useCallback
+- Recent project explanation
+- Authentication and Authorization mechanism
+- Where you stored the token and why
+- Why we need .env files
+- some plugins in Webpack
+- custom hooks and examples
+- Why you have used the Redux
+- useCallback, useMemo differences
+- Write the example for useCallback
  
 Amit:
-Explain the project
-Which testing libraries are used
-How to integrate Java backend with Frontend
-Pros and cons of Redux
-Are you comfortable with Angular
+- Explain the project
+- Which testing libraries are used
+- How to integrate Java backend with Frontend
+- Pros and cons of Redux
+- Are you comfortable with Angular
  
 
  Harshavardhan Reddy3

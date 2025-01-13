@@ -507,5 +507,42 @@ Answer:
 | **RTK Query** | Not available. | Built-in tool for managing data fetching and caching. |
 
 
---
+---
 
+
+How do async functions work in conjunction with promises in JavaScript? Can you provide an example to illustrate their interaction?
+
+Answer: 
+
+How Async Functions Work with Promises
+In JavaScript, async functions provide a simpler and cleaner way to work with asynchronous code, effectively building on top of Promises. Here’s how they interact:
+
+Async Function Behavior:
+
+Declaring a function with the async keyword makes it return a Promise implicitly, regardless of whether you explicitly return a promise or a value.
+If the function returns a value, it is wrapped in a resolved promise.
+If an error is thrown, it is converted into a rejected promise.
+Await Keyword:
+
+The await keyword can only be used inside an async function.
+It pauses the execution of the function until the promise is resolved or rejected, allowing you to write asynchronous code that looks synchronous.
+The resolved value of the promise is returned to the code after await.
+
+---
+
+What are the key differences between arrow functions and traditional function expressions in JavaScript regarding syntax and behavior?
+
+Answer:
+
+| **Aspect** | **Arrow Functions** | **Traditional Functions** |
+| --- | --- | --- |
+| **Syntax** | Concise with `=>`. | Requires `function` keyword. |
+| **`this` Binding** | Lexically bound to the enclosing context. | Dynamically bound based on how it’s called. |
+| **`arguments` Object** | Not available; use rest parameters. | Available as a special object. |
+| **Constructors** | Cannot be used as constructors. | Can be used with `new`. |
+| **Suitability for Methods** | Not suitable for object methods. | Suitable for object methods. |
+| **Super in Classes** | Inherits `super` from enclosing context. | Must explicitly use `super` inside methods. |
+
+Both have their place in modern JavaScript, with arrow functions often preferred for concise, non-method functions, and traditional functions better suited for methods and constructor use.
+
+---
