@@ -1,6 +1,10 @@
-Interviewee : Swamy Kurakula & Krishna Yaramati 
-Interviewer : Gaurav Rawlyani 
-Date: 21/06/23 15:50
+### Client Interview Questions:
+
+****Interviewee**** : Swamy Kurakula & Krishna Yaramati
+
+**Interviewer** : Gaurav Rawlyani 
+
+**Date**: 21/06/23 15:50
 
 - Swamy Kurakula Krishna Yaramati for ur ref
 - Hooks
@@ -30,11 +34,12 @@ Date: 21/06/23 15:50
 - Security/auth/authorization
 - SOLID
 - Typescript
+
 ---
 
+**Interviewee** : Nagaraju Merugu
 
-Interviewee : Nagaraju Merugu
-Date : 27/06/23 12:34
+**Date** : 27/06/23 12:34
 
 Asked questions about the projects and experience (gone through my CV)
 - HTML:
@@ -69,9 +74,11 @@ Asked questions about the projects and experience (gone through my CV)
     - how the store updates the values
     - redux hooks 
     - redux middle ware's you have worked on
+    ---
 
-Interviewee: Nagaraju Merugu (Unverified)
-Date: 29/06/23 12:16
+**Interviewee**: Nagaraju Merugu (Unverified)
+
+**Date**: 29/06/23 12:16
 
 1) MicroFrontend using module federation, How the shell will render the MFE
 2) past experience with Microfrontend and how you used to pass data between MFE's
@@ -86,8 +93,9 @@ Date: 29/06/23 12:16
 
 ---
 
-Interviewee : Konda Rahul
-Date: 04/07/23
+**Interviewee** : Konda Rahul
+
+**Date**: 04/07/23
  
 - HTML & CSS
     - different position values and their behaviour
@@ -111,9 +119,11 @@ Date: 04/07/23
     - what is difference between access token and id token
     - code review steps you do
     - You have an app with so many fields in the form. How do you show to user? How do you prevent repeated clicks of button?
+---
 
-Interviewee: Konda Rahul
-Date : 06/07/23
+**Interviewee**: Konda Rahul
+
+**Date** : 06/07/23
 
 - S&P 2nd round Questions
     Below is a use case. How can we achieve this in react
@@ -131,9 +141,11 @@ VBS is framework I worked so he asked what is it and my work in that
 
 ---
 
-Interviewee : Prathibha Varri
-Interviewer: Rafi
-Date: 12/07/23 12:04
+**Interviewee** : Prathibha Varri
+
+**Interviewer**: Rafi
+
+**Date**: 12/07/23 12:04
 
  
 - About yourself, your tech stack , roles and responsibilities and recent projects
@@ -155,11 +167,11 @@ If you are stuck with any problem /task what will you do? Have you experienced t
 
 ---
 
-Interviewee: Prudhvi Yallanti
+**Interviewee**: Prudhvi Yallanti
 
-Interviewer: Rafi
+**Interviewer**: Rafi
 
-Date: 18/07/23 12:04
+**Date**: 18/07/23 12:04
 
 - About yourself, your tech stack , roles and responsibilities and recent projects
 - What is VirtualDOM, have you used in your project?
@@ -171,9 +183,9 @@ Date: 18/07/23 12:04
 - How to embed 2 or more component as a single component, and how to communicate between them
 ---
 
-Interviewee : RaviTeja Patchipala
+**Interviewee** : RaviTeja Patchipala
 
-Date: 24/07/23 17:18
+**Date**: 24/07/23 17:18
 
 - About yourself, your tech stack, roles and responsibilities and recent projects?
 - What is VirtualDOM, What is the advantage of VirtualDOM over regular DOM?
@@ -189,9 +201,9 @@ Date: 24/07/23 17:18
 
 ---
 
-Interviewee: SaiTeja Boppana (Unverified)
+**Interviewee**: SaiTeja Boppana (Unverified)
 
-Date:26/07/23 17:16
+**Date**:26/07/23 17:16
 
 1. Semantic html(Tell some tags you have worked on)
 2. Block level and inline elements differences
@@ -207,11 +219,11 @@ Date:26/07/23 17:16
 12. Which middleware have you used in Redux and why
 13. One more scenario based question on parent child rendering and how to optimize it
 
-Interviewee: Rajana Siva (Unverified)
+**Interviewee**: Rajana Siva (Unverified)
 
 Inteviewer: Sandeep
 
-Date: 14/08/23 15:06
+**Date**: 14/08/23 15:06
 
 - Could you share your past experiences and the technologies you've worked with?
 - Explain the concept of closures in JavaScript.
@@ -231,9 +243,9 @@ Date: 14/08/23 15:06
 - JSX & component composition in React.
 
 
-Interviewee: Rajana Siva (Unverified)
+**Interviewee**: Rajana Siva (Unverified)
 
-Date: 18/08/23 12:08
+**Date**: 18/08/23 12:08
 
 - Please provide an overview of your background, experiences, tech stack, and responsibilities.
 - Scenario-Based Question 1: Imagine a scenario where a parent component contains wrapped child components. Describe how you would implement a child component re-render when an event occurs in the parent component.
@@ -249,11 +261,11 @@ Date: 18/08/23 12:08
 - Have you worked with other frameworks like Angular?
 ---
 
-Interviewee: Divya Gaddam
+**Interviewee**: Divya Gaddam
 
-Interviewer: Gupta Shally
+**Interviewer**: Gupta Shally
 
-Date: 31/08/23 14:30
+**Date**: 31/08/23 14:30
 
 1. what is call, apply bind
 2. explain the concept of currying and write the example of currying mul(1)(2)(3)
@@ -287,9 +299,9 @@ books = [
 18. Difference between null and unedfined
 ---
 
-Interviewee: Divya Gaddam
+**Interviewee**: Divya Gaddam
 
-Date: 08/09/23
+**Date**: 08/09/23
 
 1. Center the div using CSS
 2. Code for merging two arrays and sorting
@@ -297,11 +309,11 @@ Date: 08/09/23
 4. Code for the creating Chessboard using React JS
 ---
 
-Interviewee: Kartik Gaddelapelly (Unverified)
+**Interviewee**: Kartik Gaddelapelly (Unverified)
 
-Interviewer : Pavan
+**Interviewer** : Pavan
 
-Date : 04/10/23 09:23
+**Date** : 04/10/23 09:23
 
 1. Introduction
 2. React versions and difference
@@ -330,11 +342,11 @@ Date : 04/10/23 09:23
 25. Git fetch vs Git pull
 ---
 
-Interviewee : Midhuna Gade
+**Interviewee** : Midhuna Gade
 
-Interviewer: Pavan
+**Interviewer**: Pavan
 
-Date: 09/10/23 11:19
+**Date**: 09/10/23 11:19
 
 - How to use multiple versions of a javascript library in same application ?
 - How to dynamically load resources at run time ? For example loading css and javascript of a sub page when it loads and not all at once during application load ?
@@ -403,11 +415,11 @@ Date: 09/10/23 11:19
 ---
 
 
-Interviewee: Riya Jain
+**Interviewee**: Riya Jain
 
-Date: 10/10/23 09:36
+**Date**: 10/10/23 09:36
 
-Interviewer : Peter Bozzelli & Sarkis Tatarian
+**Interviewer** : Peter Bozzelli & Sarkis Tatarian
 
 1.) Can you tell me about some of the past projects you've worked on and the key areas you focused on in those projects?
 2.) How do you typically implement pagination in ReactJS applications?
@@ -426,11 +438,11 @@ Interviewer : Peter Bozzelli & Sarkis Tatarian
 
 ---
 
-Interviewee: Midhuna Gade
+**Interviewee**: Midhuna Gade
 
-Date: 11/10/23 12:36
+**Date**: 11/10/23 12:36
 
-Interviewer: Ivan Hryshchenko R1 – S&P Project
+**Interviewer**: Ivan Hryshchenko R1 – S&P Project
 
 - What are phases in rendering a html document
 - Types of storages. Is it safe to use localstorage to store confidential information?
@@ -447,11 +459,11 @@ Interviewer: Ivan Hryshchenko R1 – S&P Project
 
 ___
 
-Interviewee: Aravind Keelapatta
+**Interviewee**: Aravind Keelapatta
 
-Date: 12/10/23 18:50
+**Date**: 12/10/23 18:50
 
-Interviewer: (S&P - Pavan Pratti)
+**Interviewer**: (S&P - Pavan Pratti)
 
 - Introduction, Roles and Responsibilities
 - React 18 Features
@@ -496,11 +508,11 @@ Interviewer: (S&P - Pavan Pratti)
 ---
 
 
-Interviewee: Arokia Prabha
+**Interviewee**: Arokia Prabha
 
-Date: 13/10/23 20:42
+**Date**: 13/10/23 20:42
 
-Interviewer: Peter Bozzelli & Sarkis Tatarian
+**Interviewer**: Peter Bozzelli & Sarkis Tatarian
 
 1. Professional Journey and Project History
 2. More questions on the implementation methods, tech stacks used in the past projects.
@@ -513,10 +525,10 @@ Interviewer: Peter Bozzelli & Sarkis Tatarian
 ___
 
 
-Interviewee: Naga Sai Krishna Chandarlapati
+**Interviewee**: Naga Sai Krishna Chandarlapati
 
-Date: 17/10/23 13:48
-Interviewer:  Maulesh Mevada
+**Date**: 17/10/23 13:48
+**Interviewer**:  Maulesh Mevada
 
 Introduction:
     About yourself
@@ -538,11 +550,11 @@ React:
 
 ---
 
-Interviewee: Vaibhav Dhunde
+**Interviewee**: Vaibhav Dhunde
 
-Date: 17/10/23 15:04
+**Date**: 17/10/23 15:04
 
-Interviewer : Ivan Hryshchenko
+**Interviewer** : Ivan Hryshchenko
 
 JavaScript:
 1. Critical rendering path
@@ -572,11 +584,11 @@ As a developer, what are steps/reports required to check before production relea
 ---
 
 
-Interviewee: Naga Sai Krishna Chandarlapati
+**Interviewee**: Naga Sai Krishna Chandarlapati
 
-Date: 18/10/23 18:54
+**Date**: 18/10/23 18:54
 
-Interviewer: Jitesh Sharma
+**Interviewer**: Jitesh Sharma
 
 Introduction:
     Experience and tools used in prev project
@@ -589,11 +601,11 @@ React:
     create 8*8 chessboard in react. (Use loops)
 
 
-Interviewee: Swetha Dhandu (Unverified)
+**Interviewee**: Swetha Dhandu (Unverified)
 
-Date: 14/02/24 15:58
+**Date**: 14/02/24 15:58
 
-Interviewer: Ramesh Rajwar
+**Interviewer**: Ramesh Rajwar
 
 - Roles and Responsibilities from previous projects
 - Hoisting
@@ -614,10 +626,10 @@ Interviewer: Ramesh Rajwar
 - Generics in TS
 - tsconfig file
 
-Interviewee: Saurav Gupta
+**Interviewee**: Saurav Gupta
 
-Date: 22/02/24 15:53
-Interviewer: Ramesh Rajwar
+**Date**: 22/02/24 15:53
+**Interviewer**: Ramesh Rajwar
 
 1. Previous projects 
 2. Hoisting
@@ -641,15 +653,15 @@ Interviewer: Ramesh Rajwar
 20. HTML Semantic elements
 21. Redux Middleware and Redux Toolkit
 
-Interviewee: Saurav Gupta
+**Interviewee**: Saurav Gupta
 
-Date: 26/02/24 09:58
+**Date**: 26/02/24 09:58
 
 Interview Questions:
 -------------------
 Client: S&P 
 Project: Scorecard Team
-Interviewer: Maulesh Mevade
+**Interviewer**: Maulesh Mevade
  
 Q1. Short introduction and previous projects
 Q2. React Router
@@ -659,21 +671,21 @@ Q5. There are 3 components Parent1, child1 and child2. If an error occurs in chi
 Q6. useEffect and its uses.
 Q7. Some programs to check the useEffect concepts like how to make API calls on page load.
 Q8. Can we make API call outside useEffect?? What happens if we do so?
-Q9. Write a JS program to sum up the digits of the numbers. For example:- 2576 -> 2 + 5 + 7 + 6 -> 20 -> 2 + 0 -> 2 (Interviewer was expecting a one liner solution for this).
+Q9. Write a JS program to sum up the digits of the numbers. For example:- 2576 -> 2 + 5 + 7 + 6 -> 20 -> 2 + 0 -> 2 (**Interviewer** was expecting a one liner solution for this).
 Q10.Write a program to remove everything except even numbers from the array but you can not use a new array.
-    Ex: I/p:- [1,2,3,a,d,f,"#",4,6,4,4,")","("] => [2,4,6,4,4]( Interviewer was expecting a one liner solution for this)
+    Ex: I/p:- [1,2,3,a,d,f,"#",4,6,4,4,")","("] => [2,4,6,4,4]( **Interviewer** was expecting a one liner solution for this)
 Q11.How react works behind the scene?? How it renders the UI?? Reconciliation, Virtual DOM and diffing algorithm?? 
-Q12.Context API and scenario based question. Create two component - Parent and child. Parent has a state num and child has a set of buttons to increment and decrement the num. You need to make it working without using props. Interviewer wanted me to write down all the react components for this.   
+Q12.Context API and scenario based question. Create two component - Parent and child. Parent has a state num and child has a set of buttons to increment and decrement the num. You need to make it working without using props. **Interviewer** wanted me to write down all the react components for this.   
 Q13.Tell me all the topics you know in React and what all you don't know/Learning as of now.
  
 Note: We need to write the programs in Notepad only and any syntax highlighting editor is not allowed.
 ---
 
-Interviewee: SaiTeja Boppana (Unverified)
+**Interviewee**: SaiTeja Boppana (Unverified)
 
-Date: 04/03/24 16:11
+**Date**: 04/03/24 16:11
 
-Interviewer: Maulesh
+**Interviewer**: Maulesh
  
 1. Brief Intro(Experience, current project and tech stack used).
 2. How do you handle authentication in react components.
@@ -683,11 +695,11 @@ Interviewer: Maulesh
 6. Tell me the effects you have used till date. Differences between useCallback and useMemo
 7. ES6 features and related concepts.
 
-Interviewee: Sivaprasad Gottapu
+**Interviewee**: Sivaprasad Gottapu
 
-Date: 22/03/24 18:39
+**Date**: 22/03/24 18:39
 
-Interviewer: Janardhan Reddy G.
+**Interviewer**: Janardhan Reddy G.
  
 1. Explain SOLID principles
 2. Explain OOPS concepts
@@ -717,9 +729,9 @@ Interviewer: Janardhan Reddy G.
 
 ---
 
-Interviewee: Sivaprasad Gottapu
+**Interviewee**: Sivaprasad Gottapu
 
-Date: 30/03/24 12:13
+**Date**: 30/03/24 12:13
 
 Interviewr: Satish Vadlakonda
  
@@ -737,11 +749,11 @@ Normalization , cache Mechanism, Role based access control.
 9.	Unit testing - difference between mock/stub/spy
  
 
-Interviewee: Mahesh Balla
+**Interviewee**: Mahesh Balla
 
-Date: 03/04/24 15:29
+**Date**: 03/04/24 15:29
 
-Interviewer: G Janaradhan Reddy
+**Interviewer**: G Janaradhan Reddy
 
 1. Did you used any patterns in your react application?
 2. Explain OOPS concepts
@@ -780,11 +792,11 @@ Interviewer: G Janaradhan Reddy
 
 ---
 
-Interviewee: Praveen Pattipati
+**Interviewee**: Praveen Pattipati
 
-Date: 04/04/24 10:08
+**Date**: 04/04/24 10:08
  
-Interviewer: Syam Lanka
+**Interviewer**: Syam Lanka
 
 1. Eventbus communication in react
 2. ReduxToolKit Query vs ReactQuery
@@ -806,11 +818,11 @@ Interviewer: Syam Lanka
 18. Explain redux-saga and redux-thunk
 
 
-Interviewee: Piyush Kanathe
+**Interviewee**: Piyush Kanathe
 
-Date: 22/04/24 11:15
+**Date**: 22/04/24 11:15
 
-Interviewer - Jacek Sroga
+**Interviewer** - Jacek Sroga
 
 - About your last project. What was your role, what work you did. What are the techniques you used for optimization. Other project related questions?
 - You worked on critical rendering path optimization in your project?
@@ -828,9 +840,9 @@ Interviewer - Jacek Sroga
 - In above scenario, you would use CSS variables or SCSS variables to store theme colours, which is better for this scenario?
 
 
-Interviewee: Tharakesh Pulikonda
+**Interviewee**: Tharakesh Pulikonda
 
-Date: 22/04/24 11:36
+**Date**: 22/04/24 11:36
 
 - Write a component to reacts to screen size
 - Explain useLayoutEffect
@@ -859,11 +871,11 @@ there are many good tech blogs and white papers explaining about LCP.
 Flipkart, Amazon, Nykaa, many more.
  
 
-Interviewee: Sudheendra Vemula
+**Interviewee**: Sudheendra Vemula
 
-Date: 23/04/24 15:50
+**Date**: 23/04/24 15:50
 
-Interviewer - G. Janardhan Reddy
+**Interviewer** - G. Janardhan Reddy
 
 - tell me about yourself and projects
 - OOPs concepts, inheritance, classes and questions based on the same
@@ -892,9 +904,9 @@ Interviewer - G. Janardhan Reddy
 ---
 
 
-Interviewee : Sudheendra Vemula
-Date: 26/04/24 18:00
-Interviewer - Sai Aditya
+**Interviewee** : Sudheendra Vemula
+**Date**: 26/04/24 18:00
+**Interviewer** - Sai Aditya
 
 S&P - Interview Questions 2nd round:
 - scenario based questions - how to create a react app with multiple tabs, how to pass data through them
@@ -913,11 +925,11 @@ S&P - Interview Questions 2nd round:
 - how to maintain coding standards(like formatting, ESlint issues) through out the team ? 
  
 
-Interviewee: Saiteja Gatadi
+**Interviewee**: Saiteja Gatadi
 
-Date: 26/04/24 23:12
+**Date**: 26/04/24 23:12
 
-Interviewer - Syam Lanka
+**Interviewer** - Syam Lanka
 
 S&P - Interview Questions 1st round:
 - Project related questions
@@ -1018,12 +1030,12 @@ Suppose, if one of your team member is facing an issue which requires your help.
 like 1
 
 
-Interviewee: Srinidhi Baru (Unverified)
-Date: 02/05/24 21:47
+**Interviewee**: Srinidhi Baru (Unverified)
+**Date**: 02/05/24 21:47
 
 
 S&P - Interview Questions 1st round:
-Interviewer - Gangi Reddy Nandyala
+**Interviewer** - Gangi Reddy Nandyala
  1. Previous Project and work experince
  2. Coding task Build React app with Routing --> Two Components A and B. Add Navigation with four links and onclick route to respective components.Follow up questions what if we have captialletters in route path. How browser treats that. how to prevent that.
 3. what does below code does
@@ -1051,8 +1063,8 @@ Interviewer - Gangi Reddy Nandyala
 15. How browser understands react jsx syntaxes - what process them
 
 
-Interviewee: Niteesh Varma Gandraju
-Date: 09/05/24 09:15
+**Interviewee**: Niteesh Varma Gandraju
+**Date**: 09/05/24 09:15
 interviewer - Gangi Reddy
 
 
@@ -1108,11 +1120,11 @@ interviewer - Gangi Reddy
 
 --- 
 
-Interviewee: Srinidhi Baru (Unverified)
+**Interviewee**: Srinidhi Baru (Unverified)
 
-Date: 09/05/24 10:52
+**Date**: 09/05/24 10:52
 
-Interviewer - Syam Lanka
+**Interviewer** - Syam Lanka
 
 S&P - Interview Questions 2nd round:
 
@@ -1131,8 +1143,8 @@ S&P - Interview Questions 2nd round:
 - MFE concepts 
 
 
-Interviewee: Shravani Deshpande
-Date: 10/05/24 09:57
+**Interviewee**: Shravani Deshpande
+**Date**: 10/05/24 09:57
 
 
 Client: S&P 
@@ -1161,11 +1173,11 @@ backend experience
 
 ---
 
-Interviewee: Saiteja Gatadi
-Date: 10/05/24 20:05
+**Interviewee**: Saiteja Gatadi
+**Date**: 10/05/24 20:05
 
 Interview Questions for S&P Global Client Round - 1
-Interviewer Name: Solleti, Lokesh kumar
+**Interviewer** Name: Solleti, Lokesh kumar
  
 HTML, CSS:
 semantic elements in html
@@ -1216,8 +1228,8 @@ Follow-up question: How does your code work according to those different urls in
 Follow-up question: How does you write Unit test cases in .test.tsx files to make sure it is working in all the different environments?
 
 
-Interviewee: Akshay Puram
-Date: 14/05/24 10:18
+**Interviewee**: Akshay Puram
+**Date**: 14/05/24 10:18
 
 SNP interview client round 1
 interviewer : Syam Lanka
@@ -1273,7 +1285,7 @@ Pramila Chettri Basnet
 14/05/24 11:22
 
 Client:S&P
-Interviewer Name:Serhii Aleksandrov
+**Interviewer** Name:Serhii Aleksandrov
 1)Generic type
 2)how react work
 3)some generic question (scenerio base)
@@ -1296,7 +1308,7 @@ Saiteja Gatadi
 14/05/24 20:55
 
 Questions for S&P Global Client Round - 2
-Interviewer Name: Yang, Peter
+**Interviewer** Name: Yang, Peter
 This round is entirely managerial, focusing on the work I have done and the problems I have solved, as well as the business logic I have implemented in my previous projects.
 Introduction
 Previous Project(s)
@@ -1309,7 +1321,7 @@ Praveen Pattipati
 
 
 Interview Questions for S&P Global 
-Interviewer Name: Solleti, Lokesh kumar
+**Interviewer** Name: Solleti, Lokesh kumar
  
 HTML, CSS:
 semantic elements in html
@@ -1368,7 +1380,7 @@ Follow-up question: How does your code work according to those different urls in
 Chimuta Lingaiah
 21/05/24 11:10
 
-Client: S&P  Interviewer's: Venkat Vempati, SathishKumar Suriyakumar, Uma Sharma & Venkat Chintalapati
+Client: S&P  **Interviewer**'s: Venkat Vempati, SathishKumar Suriyakumar, Uma Sharma & Venkat Chintalapati
 Angular vs react 
 State vs props
 State vs context vs redux
@@ -1411,7 +1423,7 @@ Edited
 
 Here are the questions asked in s&p Lead  round 2:
  
-Interviewer: Shyam Lanka
+**Interviewer**: Shyam Lanka
  
 Tell me about your self 
 Explain about your previous project and followup questions 
@@ -1490,7 +1502,7 @@ Harendra Sharma
 21/10/24 14:30
 
 
- Round 1 ( S & P Global ) , Interviewer - Vishal Gaje
+ Round 1 ( S & P Global ) , **Interviewer** - Vishal Gaje
  
 Introduction
 - Can you introduce yourself and share your professional background? What inspired you to pursue a career in software development?
@@ -1626,8 +1638,8 @@ Interviewers - Venkat Chintalapati
 
 
 
-Interviewee : Gaurav Rawlyani
-Interviewer : - 
+**Interviewee** : Gaurav Rawlyani
+**Interviewer** : - 
 
 1. Strengths and weakness as a developer
 2. Ecommerce site that has different components(header/footer/left nav/ right content) developed in different frameworks(react/angular/vue)
@@ -1642,7 +1654,7 @@ Interviewer : -
 
 ---
 
-Interviewee: Abhilash Chawan (Unverified)
+**Interviewee**: Abhilash Chawan (Unverified)
 
 Questions asked by Nanda (S&P)
 1) Previous project architecture?
@@ -1656,7 +1668,7 @@ Questions asked by Nanda (S&P)
 9) About performance loading ?
 10) HOC and custom hooks implementation?
 
-Interviewee: Abhilash Chawan (Unverified)
+**Interviewee**: Abhilash Chawan (Unverified)
 
 S&P Ratings Client round 2 question asked by Satish Kumar.
  
