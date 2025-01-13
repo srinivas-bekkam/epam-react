@@ -545,4 +545,367 @@ Answer:
 
 Both have their place in modern JavaScript, with arrow functions often preferred for concise, non-method functions, and traditional functions better suited for methods and constructor use.
 
+___
+
+
+How reacts works explain?
+
+Summary of How React Works:
+- Component-Based: Build UI as small, reusable pieces.
+- JSX: Write UI with HTML-like syntax inside JavaScript.
+- Virtual DOM: Efficiently update the real DOM by comparing changes in memory.
+- State and Props: Manage data (state) and pass data between components (props).
+- Hooks: Manage state and lifecycle methods in functional components.
+- Unidirectional Data Flow: Ensures data flows from parent to child components.
+- Efficient Updates: React updates only what is necessary by comparing the Virtual DOM with the real DOM.
+
+React’s architecture allows for building interactive and high-performance UIs while keeping the development process clean and manageable. It abstracts away complex DOM manipulations and provides a powerful model for building dynamic, data-driven user interfaces.
+
+___
+
+
+ what are the different ways to rerender a component?
+
+ Answer
+
+ Summary: The main ways to trigger a re-render in React are:
+
+- State Changes (useState or this.setState)
+- Prop Changes
+- Force Update (forceUpdate in class components)
+- Context Value Changes (useContext)
+- Key Prop Changes (in lists)
+- Hook changes (useReducer, useCallback, useMemo)
+- Parent State Changes that affect children via props
+- Routing Changes (React Router)
+
+___
+
+
+Is it possible to modify the props that are passed to children from children component?
+
+Answer:
+
+No, in React, props are read-only. This means that you cannot modify the props directly inside a child component. Props are meant to be passed down from a parent component to a child component, and the child is not supposed to change the props it receives. This one-way data flow helps maintain predictable and consistent behavior in your React app.
+
+Why Props Are Read-Only?
+- Unidirectional Data Flow: React follows a unidirectional data flow (from parent to child). Props ensure that data flows in one direction, which simplifies debugging and testing.
+- Predictability: By preventing children from modifying their props, React makes the component hierarchy more predictable and easy to understand.
+- Reactivity: If children could modify their props, it could cause unpredictable state changes that break the reactive rendering model of React.
+
+___
+
+
+What is the use of tsconfig.json file what do we write in it?
+
+The tsconfig.json file is a configuration file used by TypeScript to specify the settings for how the TypeScript compiler should process the code in a project. It defines various compiler options, the files or directories to include or exclude, and other settings that help control how TypeScript transpiles your code into JavaScript.
+
+Key Purposes of tsconfig.json:
+- Compiler Options: It specifies how the TypeScript compiler should behave.
+- File Inclusion/Exclusion: It defines which files should be included or excluded from the compilation process.
+- Type Checking: It configures various rules for type checking and error reporting.
+- Project Structure: It can specify project structure for monorepos or multi-package setups.
+- Module Resolution: It configures how modules should be resolved when importing them.
+
+Example:
+```
+{
+  "compilerOptions": {
+    "target": "es5",                   // Specifies the target JavaScript version (e.g., es5, es6, esnext)
+    "module": "commonjs",              // Specifies the module system (e.g., commonjs, es6, amd)
+    "lib": ["dom", "esnext"],          // Specifies the libraries to include in the project (e.g., DOM, ESNext)
+    "allowJs": true,                   // Allows JavaScript files to be compiled
+    "checkJs": true,                   // Enables type-checking on JavaScript files
+    "strict": true,                    // Enables all strict type-checking options
+    "esModuleInterop": true,           // Ensures compatibility with common JavaScript modules
+    "skipLibCheck": true,              // Skips type checking of declaration files (.d.ts)
+    "forceConsistentCasingInFileNames": true, // Ensures consistent file casing across imports
+    "outDir": "./dist",                // Specifies the output directory for compiled JavaScript files
+    "rootDir": "./src",                // Specifies the root directory of the source files
+    "moduleResolution": "node",        // Specifies how modules get resolved (e.g., node, classic)
+    "resolveJsonModule": true          // Allows importing JSON files as modules
+  },
+  "include": ["src/**/*"],             // Specifies the files/folders to be included in the project (e.g., all files in the src folder)
+  "exclude": ["node_modules", "dist"],  // Specifies files/folders to exclude from the compilation
+  "extends": "./base-tsconfig.json",   // Extends another configuration file (if necessary)
+  "files": ["src/index.ts"],           // Specifies specific files to include
+  "references": []                     // Allows referencing other TypeScript projects (useful for monorepos)
+}
+
+```
+___
+
+We have 10 api calls and if we want to intercept that request and add headers how can we do it ?(axios instance and interceptors)?
+
+```
+
+// Add request interceptor to add headers globally
+axiosInstance.interceptors.request.use(
+  (config) => {
+    // Add headers here (e.g., authentication token, content-type, etc.)
+    const token = localStorage.getItem('authToken'); // Example: Get token from local storage
+    if (token) {
+      config.headers['Authorization'] = `Bearer ${token}`; // Add Authorization header
+    }
+    config.headers['Custom-Header'] = 'CustomValue'; // Add custom headers if necessary
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);  // If there is an error before the request is sent
+  }
+);
+```
+
 ---
+
+Communication between components and how many ways?
+
+Answer:
+
+Summary of Communication Methods:
+- Parent to Child: Use props to pass data.
+- Child to Parent: Use callback functions.
+- Sibling to Sibling: Use lifting state up or global state management (e.g., Redux, Context API).
+- Unrelated Components: Use Context API or global state management (e.g., Redux, MobX).
+- Event Emitters: For non-UI components or non-parent-child relationships.
+-  Refs: For manipulating child component methods or DOM elements directly.
+
+---
+
+what is difference between borderbox vs contentbox?
+
+| Feature | `content-box` | `border-box` |
+| --- | --- | --- |
+| **Default behavior** | Yes | No  |
+| **Width includes...** | Only content | Content + padding + border |
+| **Total size grows?** | Yes (with padding/border) | No (size stays fixed) |
+
+
+**content-box calculation:** 
+
+Total width = 200px (content) + 40px (padding) + 20px (border) = 260px
+
+**boder-box calculation:**
+
+Total width = 200px, with content adjusted to:
+
+Content width = 200px - (40px padding + 20px border) = 140px
+
+---
+
+How to achieve css browser compatibility?
+
+Answer:
+
+- Use Modern CSS with Fallbacks.
+    
+     Always provide fallbacks for CSS properties not supported in older browsers.
+    
+    Example:
+
+        ```
+        background: #000; /* Fallback for older browsers */
+        background: linear-gradient(to right, #000, #fff); /* Modern browsers */
+
+        ```
+
+- Use Vendor Prefixes
+    ```
+    .example {
+        -webkit-transform: rotate(45deg); /* Safari/Chrome */
+        -moz-transform: rotate(45deg);   /* Firefox */
+        -ms-transform: rotate(45deg);    /* IE */
+        transform: rotate(45deg);       /* Standard */
+    }
+    ```
+
+- Utilize Feature Queries (@supports)
+    ```
+    @supports (display: grid) {
+        .container {
+            display: grid;
+        }
+    }
+    ```
+
+- Graceful Degradation
+    - Ensure that your website remains functional even without advanced features.
+    - Example: If CSS Grid isn't supported, use flexbox as a fallback.
+
+
+- Progressive Enhancement
+    - Start with a basic layout and enhance the design with advanced CSS features where supported.
+
+- Test Across Browsers
+
+    Use tools to test your site in different browsers:
+    - BrowserStack: Cross-browser testing tool.
+    - Can I Use: Check browser compatibility for CSS features.
+    - DevTools: Built-in tools in browsers like Chrome, Firefox, and Edge.
+
+- Polyfills
+    - Use JavaScript or CSS polyfills for unsupported features.
+    - Example: The Modernizr library detects browser support and applies fallbacks.
+
+- Global Reset or Normalize.css
+
+- Avoid Deprecated/Experimental Features
+
+- Follow Browser Market Trends
+
+
+---
+
+
+ Flexbox vs Grid in css?
+
+ Answer:
+
+ Key Differences:
+
+Layout Dimensionality:
+- Flexbox is 1D: works on one axis at a time (either horizontal or vertical).
+- Grid is 2D: works on both axes (rows and columns) simultaneously.
+
+Complexity:
+- Flexbox is simpler and more intuitive for linear (row or column) layouts.
+- Grid is more powerful for complex layouts involving both rows and columns.
+
+Use Case:
+- Flexbox is ideal for simpler layouts like navbars, rows of items, or any layout where you align items in a row or column.
+- Grid is better suited for complex web designs like dashboards, magazine-style layouts, or page grids that need both row and column controls.
+
+---
+
+How many types of display properties in css?
+
+
+| **Display Value** | **Description** |
+| --- | --- |
+| `block` | Block-level element. |
+| `inline` | Inline-level element. |
+| `inline-block` | Inline element with block properties. |
+| `flex` | Flex container for 1D layout. |
+| `inline-flex` | Inline flex container. |
+| `grid` | Grid container for 2D layout. |
+| `inline-grid` | Inline grid container. |
+| `table` | Table element behavior. |
+| `none` | Hides the element. |
+| `contents` | Removes the element box but keeps child elements. |
+| `list-item` | List items with markers like bullets or numbers. |
+
+---
+
+what is responsive design and how to achieve without media query?
+
+Answer:
+- Fluid Layouts (Percentage-based Widths)
+    - Use percentages instead of fixed units (e.g., px) for widths and heights.
+
+- Flexible Box Layout (Flexbox)
+
+    ```
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap if they overflow */
+        gap: 10px;
+    }
+
+    .flex-item {
+        flex: 1 1 auto; /* Adjusts size dynamically */
+    }
+    ```
+- CSS Grid
+    - Grid layout enables responsive designs without media queries using the auto-fit or auto-fill properties.
+
+- Responsive Typography with Relative Units
+    - Use relative units like em, rem, or % for font sizes.
+
+- View Width and View Height Units (vw, vh)
+    - Use viewport-based units to make elements responsive.
+
+- Aspect Ratio
+    - Maintain proportional dimensions with the aspect-ratio property.
+
+- Container Queries (Modern CSS)
+    - Instead of targeting the viewport, container queries adjust styles based on the size of a parent container.
+    ```
+    @container (min-width: 400px) {
+        .box {
+            background-color: lightblue;
+        }
+    }
+    ```
+
+- Scalable Images and Videos
+    - Use max-width for images and videos to ensure they scale with the container.
+
+    ```
+    img, video {
+        max-width: 100%;
+        height: auto; /* Maintains aspect ratio */
+    }
+    ```
+
+    ---
+
+    difference between combination selectors
+    - div p
+    - div > p
+    - div + p
+    - div ~ p
+
+    Answer:
+
+-  div p (Descendant Selector)
+    - Description: Selects all <p> elements that are descendants (direct or indirect children) of a <div>.
+
+- div > p (Child Selector)
+    - Description: Selects all <p> elements that are direct children of a <div>
+        ```
+        <div>
+            <p>Selected</p> <!-- Direct child -->
+            <span>
+                <p>Not selected</p> <!-- Not a direct child -->
+            </span>
+        </div>
+
+        ```
+
+- div + p (Adjacent Sibling Selector)
+    - Description: Selects the immediately following sibling <p> element that comes after a <div>
+        ```
+        <div></div>
+        <p>Selected</p> <!-- Immediate sibling -->
+        <p>Not selected</p> <!-- Not immediately following the <div> -->    
+        ```
+
+- div ~ p (General Sibling Selector)
+    - Description: Selects all <p> elements that are siblings of a <div> and come after it in the DOM.
+
+        ```
+        <div></div>
+        <p>Selected</p> <!-- Sibling -->
+        <p>Selected</p> <!-- Sibling -->
+        <span></span>
+        <p>Selected</p> <!-- Sibling -->    
+        ```
+
+---
+
+Advantages of typescript over JavaScript
+
+ - Static Typing
+ - Better Developer Experience
+ - Improved Readability and Maintainability
+ - Object-Oriented Programming (OOP) Support
+ - Easier Refactoring
+ - Code Consistency and Structure
+ - Better Tooling and Build Support
+ - Enhanced Scalability
+
+
+ ---
+
+ - Did you worked with re-fetch or caching mechanisms in RTK?
+

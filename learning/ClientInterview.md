@@ -1394,8 +1394,7 @@ React:
 - what is the use of useContext
  
 Typescript:
-- How typescript code is getting converted ?
-- Advantages over JavaScript
+- How typescript code is getting converted ? Advantages over JavaScript
 - Redux, Redux toolkit:
 - what is React-Redux
 - Main difference you observed with RTK and Redux?
