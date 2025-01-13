@@ -1148,28 +1148,28 @@ S&P - Interview Questions 2nd round:
 
 
 Client: S&P 
-In Existing component add a text field, as soon as you type some text make a Rest API(Post call) and pass current text and current time as json {"text":"enteredText","currentDate": currentTime} as payload, and write logic to handle errors and assume you will get response as list of strings write logic to process
-asked questions around the code i wrote,questions on catch block in detail and cross questions
-different types of components in react, explain them
-stateful vs stateless components
-useEffect in detail every scenario
-how doypu configure different Url for production , testing and development.
-difference between useEffect and useLayoutEffect
-how to rerender a component without any state change
+- In Existing component add a text field, as soon as you type some text make a Rest API(Post call) and pass current text and current time as json {"text":"enteredText","currentDate": currentTime} as payload, and write logic to handle errors and assume you will get response as list of strings write logic to process
+- asked questions around the code i wrote,questions on catch block in detail and cross questions
+- different types of components in react, explain them
+- stateful vs stateless components
+- useEffect in detail every scenario
+- how doypu configure different Url for production , testing and development.
+- difference between useEffect and useLayoutEffect
+- how to rerender a component without any state change
 jsx in detail, will browser understand jsx, followup qns,
 babel
-does jsx contain html
-do we need additional configuration for babel, babelrc file
+- does jsx contain html
+- do we need additional configuration for babel, babelrc file
 few es6 qns in detail
-what are steps to achieve an alert when we close the window
-how do we change the PortNumber on the application for suppose we need local host 5000 instead of 3000
+- what are steps to achieve an alert when we close the window
+- how do we change the PortNumber on the application for suppose we need local host 5000 instead of 3000
 fragments in detail
-redux toolkit
-hoc
-reduction in react
-backend experience
-"lint-staged":{
-"./src/**/*.{js,ts,tsx}": "eslint --fix" }
+- redux toolkit
+- hoc
+- reduction in react
+- backend experience
+- "lint-staged":{
+- "./src/**/*.{js,ts,tsx}": "eslint --fix" }
 
 ---
 
@@ -1180,52 +1180,52 @@ Interview Questions for S&P Global Client Round - 1
 **Interviewer** Name: Solleti, Lokesh kumar
  
 HTML, CSS:
-semantic elements in html
-how do you display div elements side by side
-how to achieve responsive design, follow-up question on media-queries (and write the syntax)
-box model
-block vs inline
-CSS Pre-processors and its advantages ?
+- semantic elements in html
+- how do you display div elements side by side
+- how to achieve responsive design, follow-up question on media-queries (and write the syntax)
+- box model
+- block vs inline
+- CSS Pre-processors and its advantages ?
 
 JS:
-what are the different loops we have?
-forEach vs map
-explain all the dom traversal methods
-undefined vs null
+- what are the different loops we have?
+- forEach vs map
+- explain all the dom traversal methods
+- undefined vs null
 React:
-Explain all the different hooks
-useEffect without dependency and with empty dependency array
-Follow-up question: How to fetch api on some state value is changed ?
-why useCallback hook is needed?
-How to create a customHook?
-How to create CustomComponent?
-Follow-up question: How to make sure your Common component is dealing with undefined props while performing map operations?
-Explain how React Routing works?
-React event handlers vs Javascript handlers. Difference(s) you observed ?
-Suppose if you have 3 checkboxes, how does you get to know that a specific checkbox state is checked or not?
-Follow-up question: How does we store the value of checkbox.
-React fetch api vs Javascript fetch api (what differences you observed)?
-How do you pass the data from Child component to Parent component
-If I have a ButtonComponent, then how does you write Unit test cases for this component?
+- Explain all the different hooks
+- useEffect without dependency and with empty dependency array
+- Follow-up question: How to fetch api on some state value is changed ?
+- why useCallback hook is needed?
+- How to create a customHook?
+- How to create CustomComponent?
+- Follow-up question: How to make sure your Common component is dealing - with undefined props while performing map operations?
+- Explain how React Routing works?
+- React event handlers vs Javascript handlers. Difference(s) you observed ?
+- Suppose if you have 3 checkboxes, how does you get to know that a specific checkbox state is checked or not?
+- Follow-up question: How does we store the value of checkbox.
+- React fetch api vs Javascript fetch api (what differences you observed)?
+- How do you pass the data from Child component to Parent component
+- If I have a ButtonComponent, then how does you write Unit test cases for this component?
 
 Typescript:
-Differences between .js, .jsx, .tsx files?
-How typescript code is getting converted ?
-Advantages over javascript
+- Differences between .js, .jsx, .tsx files?
+- How typescript code is getting converted ?
+- Advantages over javascript
 
 Redux, Redux toolkit:
-Main difference you observed with RTK?
-Did you worked with re-fetch or caching mechanisms in RTK?
-What is store ?
-What is reducer?
-Does Redux supports two way data binding?
-Miscellaneous:
-How much test coverage you maintained in your previous project?
-What sort of versioning tools you have worked on ?
-Any idea on SonarQube?
-How and where to maintain different urls for different environments like (dev, qa, uat, production)
-Follow-up question: How does your code work according to those different urls in different enviornments?
-Follow-up question: How does you write Unit test cases in .test.tsx files to make sure it is working in all the different environments?
+- Main difference you observed with RTK?
+- Did you worked with re-fetch or caching mechanisms in RTK?
+- What is store ?
+- What is reducer?
+- Does Redux supports two way data binding?
+- Miscellaneous:
+- How much test coverage you maintained in your previous project?
+- What sort of versioning tools you have worked on ?
+- Any idea on SonarQube?
+- How and where to maintain different urls for different environments like (dev, qa, uat, production)
+- Follow-up question: How does your code work according to those different urls in different enviornments?
+- Follow-up question: How does you write Unit test cases in .test.tsx files to make sure it is working in all the different environments?
 
 
 **Interviewee**: Akshay Puram
@@ -1234,24 +1234,24 @@ Follow-up question: How does you write Unit test cases in .test.tsx files to mak
 SNP interview client round 1
 interviewer : Syam Lanka
  
-1)discussion on previous project
-2)implementation of authentication and authorisation in your project
-3)routing in your projects
-4)explain how pagination will be implemented and working of it and use cases
-5)explain reduxtookit and redux saga and explain the flow
-6)why webpack is used and explain configuration in your project and how jsx is converted to browser understandable code 
-7)where does the scripts will be written and why package.json is used?
-8)unit testing and how to install and write their configurations?
-9)did you configure the files for jest and where do you write the test files ?
-8)custom hooks written in your project and why they are used?
-9)can we call a hook/custom hook inside other hooks ?
-10)how to achieve a functionality where we have a usecase where we need to call hook inside hook functionality?
-11)explain useCallback and usememo hook and its differences?
-12)explain useref hook and its usecases
-13)useMutate hook
-14)do you have any experience in backend ?
-15)demonstate the issue thats occurs when we dont use usecallback and resolve it using usecallback and usememo(online coding)
-16)MFE
+1) discussion on previous project
+2) implementation of authentication and authorisation in your project
+3) routing in your projects
+4) explain how pagination will be implemented and working of it and use cases
+5) explain reduxtookit and redux saga and explain the flow
+6) why webpack is used and explain configuration in your project and how jsx is converted to browser understandable code 
+7) where does the scripts will be written and why package.json is used?
+8) unit testing and how to install and write their configurations?
+9) did you configure the files for jest and where do you write the test files ?
+8) custom hooks written in your project and why they are used?
+9) can we call a hook/custom hook inside other hooks ?
+10) how to achieve a functionality where we have a usecase where we need to call hook inside hook functionality?
+11) explain useCallback and usememo hook and its differences?
+12) explain useref hook and its usecases
+13) useMutate hook
+14) do you have any experience in backend ?
+15) demonstate the issue thats occurs when we dont use usecallback and resolve it using usecallback and usememo(online coding)
+16) MFE
 
 
 Burra Sree Nagavalli Aparna
@@ -1260,25 +1260,25 @@ Burra Sree Nagavalli Aparna
 client: SNP 
 interviewer: Syam Lanka
  
-1.explain about your project?
-2.how was authentication and authorization implemented in you project?
-3.how was routing system in your project?
-4.What is url how is it present in your project?
-5.What is usemutation hook used for?
-6.explain about interceptors.
-7.Did you implement interceptors in your project?
-8.What are different modes?in webpack explain
-9.what are environment variables 
-10.What does .env file does?
-11.what is useQuery?
-12.do you work with sagas?What is the difference between redux and redux toolkit
-13.What is webpack?how did you configure it?
-14.explain about useReducer?
-15.explain about useCallback and useMemo hook?
-16.difference between useCallback and useMemo?
-17.did you use aggrid?if yes explain
-18.how do you implement useCallback can you code with an example?
-19.How do you do post call with axios ?
+1. explain about your project?
+2. how was authentication and authorization implemented in you project?
+3. how was routing system in your project?
+4. What is url how is it present in your project?
+5. What is usemutation hook used for?
+6. explain about interceptors.
+7. Did you implement interceptors in your project?
+8. What are different modes?in webpack explain
+9. what are environment variables 
+10. What does .env file does?
+11. what is useQuery?
+12. do you work with sagas?What is the difference between redux and redux toolkit
+13. What is webpack?how did you configure it?
+14. explain about useReducer?
+15. explain about useCallback and useMemo hook?
+16. difference between useCallback and useMemo?
+17. did you use aggrid?if yes explain
+18. how do you implement useCallback can you code with an example?
+19. How do you do post call with axios ?
 
 
 Pramila Chettri Basnet
@@ -1286,22 +1286,22 @@ Pramila Chettri Basnet
 
 Client:S&P
 **Interviewer** Name:Serhii Aleksandrov
-1)Generic type
-2)how react work
-3)some generic question (scenerio base)
-4)how event loop work
-5)microtask and macrotask que
+1) Generic type
+2) how react work
+3) some generic question (scenerio base)
+4) how event loop work
+5) microtask and macrotask que
 React task(create coununter app which basically have two button 'Start' and 'Stop' if user click on start button then count should be increment by 1 and i f user click on stop button then counter shoud stop increment and show corresponding count value )
 Follow up question from task
-	a)how can we update initial state dynamically
-	b)what else can we do to make it reusal component
-6)Test case of created counter app
-7)Redux and RTK
-8)Middleware in redux
-9)Code execution sequence
-10)Promise VS async await
-11)How do you setUp project from scratch
-12)CMS
+    - how can we update initial state dynamically
+    - b) what else can we do to make it reusal component
+6) Test case of created counter app
+7) Redux and RTK
+8) Middleware in redux
+9) Code execution sequence
+10) Promise VS async await
+11) How do you setUp project from scratch
+12) CMS
 
 
 Saiteja Gatadi
@@ -1309,11 +1309,11 @@ Saiteja Gatadi
 
 Questions for S&P Global Client Round - 2
 **Interviewer** Name: Yang, Peter
-This round is entirely managerial, focusing on the work I have done and the problems I have solved, as well as the business logic I have implemented in my previous projects.
+- This round is entirely managerial, focusing on the work I have done and the problems I have solved, as well as the business logic I have implemented in my previous projects.
 Introduction
-Previous Project(s)
-What business logic(s) you have written in your previous projects
-Justification on why I should I hire you ?
+- Previous Project(s)
+- What business logic(s) you have written in your previous projects
+- Justification on why I should I hire you ?
 
 
 Praveen Pattipati
@@ -1323,97 +1323,97 @@ Praveen Pattipati
 Interview Questions for S&P Global 
 **Interviewer** Name: Solleti, Lokesh kumar
  
-HTML, CSS:
-semantic elements in html
-how do you display div elements side by side
-how to achieve responsive design, follow-up question on media-queries (and write the syntax)
-box model
-block vs inline
-CSS Pre-processors and its advantages ?
-what is css specificity
-what is difference between borderbox vs contentbox
-How to achieve css browser compatibility
-Flexbox vs Grid in css
-what is boxsizing
-what is Z-Index
-How many ways to position an element in css
-How to align text to left inside div
-how many types of display properties in css
-what is responsive design and how to achieve without media query
-difference between combination selectors
-div p
-div > p
-div + p
-div ~ p
-what is float in css and float works
-how to add background image around the text
-what is transform in css
+- HTML, CSS:
+- semantic elements in html
+- how do you display div elements side by side
+- how to achieve responsive design, follow-up question on media-queries (and write the syntax)
+- box model
+- block vs inline
+- CSS Pre-processors and its advantages ?
+- what is css specificity
+- what is difference between borderbox vs contentbox
+- How to achieve css browser compatibility
+- Flexbox vs Grid in css
+- what is boxsizing
+- what is Z-Index
+- How many ways to position an element in css
+- How to align text to left inside div
+- how many types of display properties in css
+- what is responsive design and how to achieve without media query
+- difference between combination selectors
+    - div p
+    - div > p
+    - div + p
+    - div ~ p
+
+- what is float in css and float works
+- how to add background image around the text
+- what is transform in css
  
 React:
-difference between class components vs Functional components
-what is custom hook and why we need it
-Explain all the different hooks
-useEffect without dependency and with empty dependency array
-why useCallback hook is needed?
-How to create a customHook?
-Explain how React Routing works?
-React testing library
-what is the use of useContext
+- difference between class components vs Functional components
+- what is custom hook and why we need it
+- Explain all the different hooks
+- useEffect without dependency and with empty dependency array
+- why useCallback hook is needed?
+- How to create a customHook?
+- Explain how React Routing works?
+- React testing library
+- what is the use of useContext
  
 Typescript:
-How typescript code is getting converted ?
-Advantages over JavaScript
- 
-Redux, Redux toolkit:
-what is React-Redux
-Main difference you observed with RTK and Redux?
-what is tag in react toolkit query how it is useful while refetching
-Did you worked with re-fetch or caching mechanisms in RTK?
+- How typescript code is getting converted ?
+- Advantages over JavaScript
+- Redux, Redux toolkit:
+- what is React-Redux
+- Main difference you observed with RTK and Redux?
+- what is tag in react toolkit query how it is useful while refetching
+- Did you worked with re-fetch or caching mechanisms in RTK?
  
 Miscellaneous:
-How and where to maintain different urls for different environments like (dev, qa, uat, production)
-Follow-up question: How does your code work according to those different urls in different environments?
+- How and where to maintain different urls for different environments like (dev, qa, uat, production)
+- Follow-up question: How does your code work according to those different urls in different environments?
 
-
+---
 
 
 Chimuta Lingaiah
 21/05/24 11:10
 
 Client: S&P  **Interviewer**'s: Venkat Vempati, SathishKumar Suriyakumar, Uma Sharma & Venkat Chintalapati
-Angular vs react 
-State vs props
-State vs context vs redux
-Communication between components and how many ways?
-Redux advantages and disadvantages?
-How to handle session timeout in frontend
-Use of session storage and local storage
-Ag grid - dynamic rendering & real time scenarios
-When to use state when to use redux
-Hooks in React
-How we can use different urls based on environment 
-React routes based questions
-Display options in dropdowns
-ES6 vs Typescript
-Is it possible to use nested components? 
-How many ways we can add css to the components?
-Unit testing related questions
-Axios & Handle API errors - interceptors
-How many ways to resolve merge conflicts in GIT
-Creating feature branches and creating PR
-Deployments related question
-Do you havs experience in devops azure
-Do you have experience in writing REST apis
-what are the different state management techniques you have used so far?
-micro front ends
-  -- communication between them
-  -- advantages & disadvantages
-How do you achieve 100% code coverage
-what are the tools you have used so far to monitor the production logs
-Do you have any experience in real time user metrics.
-How to integrate Power-BI in web application.
-Any experience handling web application deployment end to end?
-
+- Angular vs react 
+- State vs props
+- State vs context vs redux
+- Communication between components and how many ways?
+- Redux advantages and disadvantages?
+- How to handle session timeout in frontend
+- Use of session storage and local storage
+- Ag grid - dynamic rendering & real time scenarios
+- When to use state when to use redux
+- Hooks in React
+- How we can use different urls based on environment 
+- React routes based questions
+- Display options in dropdowns
+- ES6 vs Typescript
+- Is it possible to use nested components? 
+- How many ways we can add css to the components?
+- Unit testing related questions
+- Axios & Handle API errors - interceptors
+- How many ways to resolve merge conflicts in GIT
+- Creating feature branches and creating PR
+- Deployments related question
+- Do you havs experience in devops azure
+- Do you have experience in writing REST apis
+- what are the different state management techniques you have used so far?
+- micro front ends
+    - communication between them
+    - advantages & disadvantages
+- How do you achieve 100% code coverage
+- what are the tools you have used so far to monitor the production logs
+- Do you have any experience in real time user metrics.
+- How to integrate Power-BI in web application.
+- Any experience handling web application deployment end to end?
+---
 
 
 Mahesh Balla
@@ -1425,34 +1425,34 @@ Here are the questions asked in s&p Lead  round 2:
  
 **Interviewer**: Shyam Lanka
  
-Tell me about your self 
-Explain about your previous project and followup questions 
-How did you handle authentication and authorization in your project and follow up questions? 
-Why did you choose to store token in session storage 
-Different ways of component communication 
-Did you integrated statemanagement library in your project and why do you feel it is required? 
-How do you solve the issue, if two npm packages having common dependency with different version? 
-What are overrides, what they do? 
-Different plugins used in webpack? 
-What module federation and why do you use that? 
-Explain about mircro frontends 
-How did you handle different environment specific configurations in your project? 
-What is cors issue how do you handle it? 
-How do you handle security vulnarabilities? 
-How do you handle xss attacks? 
-Explain about context in react? 
-What are usecallback and usememo 
-Tell me the scenarios where did you use usecallback and usememo? 
-Write the code using usecallback and usememo and explain while writing? 
-What is useref is used for and write the code for that? 
-Event bus communication 
-What if the data published from one component before loading of another component which is subscribed for it 
-Did you write testcases, Which testing library used 
-How much test coverage you maintain in your project 
-How do you handle if your application depends on thirdparty api server 
-What is the idle  approach to make an api call for that service and pros and cons of that approach 
-Explain about ci/cd flow 
-Any backend experience and how comfortable you are with db? 
+- Tell me about your self 
+- Explain about your previous project and followup questions 
+- How did you handle authentication and authorization in your project and follow up questions? 
+- Why did you choose to store token in session storage 
+- Different ways of component communication 
+- Did you integrated statemanagement library in your project and why do you feel it is required? 
+- How do you solve the issue, if two npm packages having common dependency with different version? 
+- What are overrides, what they do? 
+- Different plugins used in webpack? 
+- What module federation and why do you use that? 
+- Explain about mircro frontends 
+- How did you handle different environment specific configurations in your project? 
+- What is cors issue how do you handle it? 
+- How do you handle security vulnarabilities? 
+- How do you handle xss attacks? 
+- Explain about context in react? 
+- What are usecallback and usememo 
+- Tell me the scenarios where did you use usecallback and usememo? 
+- Write the code using usecallback and usememo and explain while writing? 
+- What is useref is used for and write the code for that? 
+- Event bus communication 
+- What if the data published from one component before loading of another component which is subscribed for it 
+- Did you write testcases, Which testing library used 
+- How much test coverage you maintain in your project 
+- How do you handle if your application depends on thirdparty api server 
+- What is the idle  approach to make an api call for that service and pros and cons of that approach 
+- Explain about ci/cd flow 
+- Any backend experience and how comfortable you are with db? 
 
 
 Akshay Puram
